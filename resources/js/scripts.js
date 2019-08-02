@@ -40,8 +40,12 @@ $(document).ready(function() {
 
 	});
 
+/*	$('.events-image').hover(function(){
 
 
+
+	})
+*/
 
 }  
 );

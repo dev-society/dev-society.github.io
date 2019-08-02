@@ -14,9 +14,11 @@
 
 @media only screen and (max-width: 800px) {
 	body{ font-size: 18px;
-		  overflow-x: hidden; }
+		  overflow-x: hidden;
+		}
 	section { padding :60px 0; }
 	
+
 	h1{
 		text-align: center;
 	}
@@ -25,6 +27,17 @@
 		text-align: left;
 	}
 
+	.logo img {
+		height: 48px ;
+		width : 86px ;
+		float: left;
+		padding-left: 10%;
+	}
+
+	nav{
+		padding-top: 0%;
+		padding-bottom: 0%;
+	}
 
 	.title-box{
 		top:45%;
@@ -35,7 +48,7 @@
 		padding: 0;
 		margin: 0;
 		display: inline-block;
-		padding-top: 20px;
+		padding-top: 10px;
 		display: visible;
 		height: 0px;
 	}
@@ -184,11 +197,16 @@
 ******************************************************************************
 *****************************************************************************/
 
-.projects-header h1 , h2{
+.projects-header h1 {
 	font-size: 40px;
 }
 
+.projects-header h2{
+	font-size: 20px;
 
+}
+
+/*use different selectors because there will be conflict of font sizes*/
 
 
 
@@ -199,13 +217,17 @@
 
 /*For small phones from 0 to 48px*/
 @media only screen and (max-width: 420px) {
-	body{ font-size: 14px; }
+	body{ font-size: 15.5px; }
 	section { padding :40px 0; }
 
 	h1{
 		text-align: center;
 	}
 
+	nav{
+		padding-top: 0%;
+		padding-bottom: 0%;
+	}
 
 	.our-motto{
 		text-align: center;
@@ -222,19 +244,19 @@
 	}
 
 	.text{
-		padding-left: 70%;
-		font-size: 75%;
+
+		font-size: 97%;
 		float:left; 
-		margin: 0, 0 , 0 ,0;
-		margin-left: 0;
+
 		position: absolute;
-		margin-top: 17%;
 		text-align: center;
-		margin-right: 15%;
 		visibility: hidden;
 		z-index: 1;
 		color: #33691E;
 		font-weight: 400;
+		margin-top:79%;
+		margin-left: 23%;
+		margin-right: 23%;
 	}
 
 }
