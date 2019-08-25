@@ -209,7 +209,30 @@
 /*use different selectors because there will be conflict of font sizes*/
 
 
+.projects-links{
+	margin-left: 10%;
+	margin-right: 0px;
+	width: 85%;
 
+}
+
+.projects-block a{
+	float: left;
+	text-decoration: none;
+	border:1px solid blue;
+	color: grey;
+	font-size: 13px;
+	padding:2px 7px;
+}
+
+
+.content{
+	border:1px solid white;
+	background-color: white;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 85%;
+}
 
 }
 
@@ -217,7 +240,9 @@
 
 /*For small phones from 0 to 48px*/
 @media only screen and (max-width: 420px) {
-	body{ font-size: 15.5px; }
+	body{ font-size: 15.5px; 
+		  overflow-x: none;
+		}
 	section { padding :40px 0; }
 
 	h1{
@@ -227,6 +252,22 @@
 	nav{
 		padding-top: 0%;
 		padding-bottom: 0%;
+	}
+
+	.logo img {
+		height: 48px ;
+		width : 86px ;
+		float: left;
+		padding-left: 10%;
+	}
+
+	.mobile-nav-icon i{
+		display: block;
+		border:0;
+		font-size: 175%;
+		float: right;
+		padding-right: 5%;
+
 	}
 
 	.our-motto{

@@ -156,7 +156,7 @@ header{
 	text-align: left;
 }
 
-h1{
+.about-us h1{
 	margin-top: 0;
 	margin-bottom: 20px;
 
@@ -562,6 +562,7 @@ footer a{
 	background: linear-gradient(0deg ,#D4E157 ,#C0CA33  , #689F38);
 	background-size: cover;
 	height: 100vh;
+
 }
 
 .projects-header-content {
@@ -621,4 +622,64 @@ footer a{
 	text-align: center;
 	margin-top: 20px;
 	
+}
+
+
+
+
+.projects-links{
+	margin-left: 15%;
+	margin-right: 10%;
+	width: 65%;
+
+}
+
+
+.projects-block a{
+	float: left;
+	text-decoration: none;
+/*	padding: .1rem .1rem;   */
+	font-size: 110%;
+	border:1px solid blue;
+	color:grey;
+	background-color: #DCE775;
+	padding: 3px 10px;
+
+}
+
+.projects-block a:active{
+	background-color: #AFB42B;
+
+}
+
+
+.content{
+	border:1px solid white;
+	background-color: white;
+	margin-left: 15%;
+	margin-right: 10%;
+	width: 75%;
+}
+
+.content video{
+	align-content: center;
+	padding-left: 10%;
+}
+
+.hidden{
+	display:none;
+}
+
+.projects-info{
+	color:#2c3e50;
+	padding-left:2%;
+	padding-right: 2%;
+	text-align: center;
+	padding-top: 3%;
+	width:80%;
+}
+
+.projects-info a{
+	margin-top:1%;
+	margin-left:43%;
 }

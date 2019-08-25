@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects</title>
+		<meta name="viewport" content="width=device-width , initial-scale=1.0 maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="external/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="external/css/all.css">
+		<link rel="stylesheet" type="text/css" href="external/css/brands.css">
+		<link rel="stylesheet" href="external/css/w3.css">
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<style>
+			html{
+				color: #485460;
+				overflow-x: hidden;
+				}
+			h1 , h2 , h3{
+				text-align:center;
+			} 
+
+			p{
+				width: 80%;
+				/*width shoould be 100 - (padding)   i.e the leftover part*/
+				padding-left: 10%;
+				padding-right:10%;
+			 }
+
+			.logo img {
+					height: 64px ;
+					width: auto;
+					float: left;
+					padding-left: 10%;
+				}
+			@media only screen and (max-width:800px){
+				.logo img {
+					height: 45px ;
+					width: auto;
+					float: left;
+					padding-left: 10%;
+				}
+			}
+			
+			.mySlides {
+					display:none;
+					}
+				.sliderT{
+					color:white;
+						}
+				.slider{	
+					color:white;
+				}
+				.Stit{
+					text-align:center;
+				}
+				#slide{
+					font-style:italic;
+					text-align:center;
+					}
+				.tf-events{
+					margin:0;
+					background-color:#f4f4f4;
+					height:300px;
+					text-align:center;
+					}
+				.dr{
+					background-color:#f4f4f4;
+					}
+				.w3-animate-fading{max-height:630px;}
+
+				.cyl{
+					text-align:center;
+					}
+
+
+					/******************************
+					SELF ADDED 
+					***********************************/
+					.tf-events-section{
+						height:150vh;
+					}
+
+					.tf-events{
+						padding-top:15%;
+					}
+					.tf-events img{
+						width:15%;
+						height:auto;
+						padding: 0;
+						align-content: center;
+					}
+
+									.flip-card {
+					  background-color: transparent;
+					  width: 300px;
+					  height: 300px;
+					  perspective: 1000px;
+					}
+
+					.flip-card-inner {
+					  position: relative;
+					  width: 100%;
+					  height: 100%;
+					  text-align: center;
+					  transition: transform 0.6s;
+					  transform-style: preserve-3d;
+					  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+					  align-content: center;
+					}
+
+					.flip-card:hover .flip-card-inner {
+					  transform: rotateY(180deg);
+					}
+
+					.flip-card-front, .flip-card-back {
+					  position: absolute;
+					  width: 100%;
+					  height: 100%;
+					  backface-visibility: hidden;
+					}
+
+					.flip-card-front {
+					  background-color: #bbb;
+					  color: black;
+					}
+
+					.flip-card-back {
+					  background-color: black;
+					  color: white;
+					  transform: rotateY(180deg);
+					  a color:yellow;
+					}
+					.service{
+						margin:20px;
+						}
+					.about_text_main{
+							margin-top:70px;
+							margin-left:80px;}
+						.about_text_main h2 {
+							margin-bottom: 17px;
+							line-height: 55px;}
+						h2 {
+							font-size: 45px;
+						}
+						h2 {
+							display: block;
+							margin-block-start: 0.83em;
+							margin-block-end: 0.83em;
+							margin-inline-start: 0px;
+							margin-inline-end: 0px;
+							font-weight: bold;
+						}
+						.text_indent_30 {
+							text-indent: 30px;
+						}
+						.about_text_main p {
+							margin-bottom: 10px;
+						}
+						#p_e{
+									background-color:#f4f4f4;
+									max-width:100%;
+									margin-bottom:50px;
+									margin-top:55px;}			
+		</style>
+		
+
+</head>
+<body>
+	<section class="projects-header">
+		<nav >
+			<div class=logo>
+				<a href="index.html"><img src="images/logo.png"></a>
+			</div>	
+				<ul class="main-nav js-main-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#about-us">About Us</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="#">Members</a></li>
+					<li><a href="#">Time Table</a></li>
+					<li><a href="#footer">Contact Us</a></li>
+				</ul>
+
+				<a class="mobile-nav-icon js-nav-icon"><i class="fas fa-bars"></i></a>
+			
+		</nav>
+
+
+	<div class="w3-container">
+		  <h1>&lt/Events&gt </h1>
+		  <p id="slide">We organize various events throughout the year.</p>
+		</div>
+	<div class="w3-content w3-display-container">
+		<div class="he">
+			<div class="w3-display-container mySlides">
+			  <img src="images/techfest19/inaugration.jpeg" style="width:100%"  class="w3-animate-fading">
+			  <div class="w3-display-bottom-left w3-large w3-container w3-padding-16 w3-black">
+				Inaugration
+			  </div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="images/techfest19/posters.jpeg" style="width:100%"  class="w3-animate-fading">
+			  <div class="w3-display-bottom-left w3-large w3-container w3-padding-16 w3-black">
+				Techfest Posters
+			  </div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="images/techfest19/codestorm.jpeg" style="width:100%"  class="w3-animate-fading">
+			  <div class="w3-display-bottom-left w3-large w3-container w3-padding-16 w3-black">
+				Students brainstorming in codestorm.
+			  </div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="images/techfest19/doy1.jpeg" style="width:100%"  class="w3-animate-fading">
+			  <div class="w3-display-bottom-left w3-large w3-container w3-padding-16 w3-black">
+				Developer of the year.
+			  </div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="images/techfest19/doy2.jpeg" style="width:100%"  class="w3-animate-fading">
+			  <div class="w3-display-bottom-left w3-large w3-container w3-padding-16 w3-black">
+				Developer of the year.
+			  </div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="images/techfest19/doy3.jpeg" style="width:100%"  class="w3-animate-fading">
+			  <div class="w3-display-bottom-left w3-large w3-container w3-padding-16 w3-black">
+				Developer of the year.
+			  </div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="images/techfest19/class.jpeg" style="width:100%"  class="w3-animate-fading">
+			  <div class="w3-display-bottom-left w3-large w3-container w3-padding-16 w3-black">
+				A regular classroom session.
+			  </div>
+			</div>
+		</div>
+
+
+</div>
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+</section>
+
+</div>
+<div class="dr">
+<div class="row">
+	
+<section class="tf-events-section">	
+				<div class="tf-events">
+				<img src="images/codestorm-poster.jpeg" >
+				<div class="cyl"><h1>CodeStorm</h1>
+					Codestorm was a competitive programming contest hosted over hackerrank. It was an onsite coding event.
+				</div></div>
+
+	
+				<div class="tf-events">
+				<img src="images/techfest19/devoftheyear-poster.jpeg">
+				<h1>Developer Of the Year</h1>
+					<p>
+						It was one of its kind the only contest related to software development. Participants were supposed to submit their prototype within the deadline. After that they presented their idea and about the tech used in their development.
+						Projects were judged on the basis of idea , UI/UX and presentation.	
+					</p>
+				</div>
+
+				</div></div>
+</section>
+
+
+	<section class="our_service light_area section_padding_100_100" id="service">
+		<div class="container">
+			<div class="section_heading text-center">
+				<h2 >&ltUpcoming_Events &gt</h2>
+				<div class="describe_section_title">
+					<p>Stay tuned of new events here</p>
+				</div>
+			</div>
+			
+			<div class="row">
+			
+				<div class="service">
+				
+				<div class="col-sm-3">
+				<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					  <img src="images/coming-soon.png" alt="Avatar" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+					  <h1>Event to be revealed</h1> 
+					  <p>Stay tuned</p> 
+
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				
+				<div class="service">
+				
+
+				
+				<button class="w3-button w3-display-left w3-yellow" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="w3-button w3-display-right w3-yellow" onclick="plusDivs(1)">&#10095;</button>
+
+
+				
+			</div>
+			
+		</div>
+	</section>
+
+<!--	<section class="our_service light_area section_padding_100_100" id="services">
+		<div class="container" id="p_e">
+			<div class="section_heading text-center">
+				<h2 class="section_heading_title">&lt/Past_Events&gt</h2>
+				<div class="describe_section_title">
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam noempor invidunt<br> ut labore et dolore magna aliquyam erat</p>
+				</div>
+			</div>
+			
+			<div class="row">
+			
+				<div class="service">
+				
+				<div class="col-sm-3">
+				<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					  <img src="C:\Users\HP\Desktop\fuck\pics/19.jpg" alt="Avatar" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+					  <h1>Code_Storm</h1> 
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+					  <p>The competitive coding Section</p>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				
+				<div class="service">
+				
+				<div class="col-sm-3">
+				<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					  <img src="C:\Users\HP\Desktop\fuck\pics/18.jpg" alt="Avatar" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+					  <h1>Dev Of the Year</h1> 
+					  <p>Lorem ipsum dolor sit amet, consecte adipiscing elit.</p> 
+					  <p>Developer of The Year Is given on overall basis.</p>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				
+				<div class="service">
+				
+				<div class="col-sm-3">
+				<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					  <img src="C:\Users\HP\Desktop\fuck\pics/10.jpg" alt="Avatar" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+					  <h1>Game Dev</h1> 
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+					  <p>Presentation of Game Developed</p>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div> 				
+
+
+				
+			</div>
+			
+		</div>
+	</section> -->
+
+	
+
+	
+
+
+
+
+
+
+
+
+	<footer>
+				<div id="footer">
+				<div class="social-media">
+					<h2>Follow us on</h2>
+					<p><a href="mailto:devsociety.bit@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> devsociety.bit@gmail.com</a></p>
+
+					<p><a href="fb.com/devsocietybit"><i class="fab fa-facebook-square"></i> /devsocietybit</a></p>
+
+					<p><a href="https://github.com/dev-society/" ><i class="fab fa-github"></i> /dev-society</a></p>
+				</div>
+				<div class="footer-content1">
+					<h2>Site Map</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#about-us">About Us</a></li>
+						<li><a href="projects.html">Our Projects</a></li>
+						<li><a href="events.html">Events</a></li>
+						<li><a href="#">Members</a></li>
+						<li><a href="#">Time Table</a></li>
+						<li><a href="#footer">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="footer-content2">
+					<p>A15 , Admin building , BIT Sindri - 828123 <br>Dhanbad , Jharkhand , India</p>
+
+
+					<div class="map">
+						<iframe width="100%" height="100%" frameborder="0" style="border:0"
+						src="https://www.google.com/maps/embed/v1/place?q=Admin%20building%20bit%20sindri&key=AIzaSyBLOd3Jn74yWqGsjzLyXaMRtJAL-KaLp18" allowfullscreen></iframe> 
+					</div>
+
+					
+
+				</div>
+				</div>		
+			</footer>
+
+
+
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+
+</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="resources/js/scripts.js"></script>
+<!--	<script src="js/jQuery.js"></script> -->
+<script src="js/bootstrap.min.js"></script>	
+</body>
+</html>

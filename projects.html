@@ -4,7 +4,8 @@
 <head>
 	<title>Projects</title>
 
-		<link rel="stylesheet" type="text/css" href="external/css/normalize.css">
+		<link rel="stylesheet" type="text/css" 
+		href="external/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
@@ -23,8 +24,8 @@
 				<ul class="main-nav js-main-nav">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="index.html#about-us">About Us</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Events</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="events.html">Events</a></li>
 					<li><a href="#">Members</a></li>
 					<li><a href="#">Time Table</a></li>
 					<li><a href="#footer">Contact Us</a></li>
@@ -33,7 +34,7 @@
 				<a class="mobile-nav-icon js-nav-icon"><i class="fas fa-bars"></i></a>
 			
 		</nav>
-
+<!--
 		<div class="projects-header-content">
 			<h1>Projects</h1>
 
@@ -44,9 +45,51 @@
 			<h2><a href="#webd">Web Development</a></h2>
 			<h2><a href="#android">Android Development</a></h2>
 		</div>
+-->
+
+		<div class="projects-block">
+			<div class="projects-links">
+				<a href="#" type="button" id="graphicsDevBtn"> Graphics Development</a>
+				<a href="#" id="gameDevBtn" type="button">Game Development</a>
+				<a href="#" type= "button" id="webDBtn">Web Development</a>
+				<a href="#" type="button" id="androidDevBtn">Android Development</a>
+			</div>
+			<div class="projects-boxed">
+			</div>
+				<div class="content">
+					<p>
+						<div id="graphicsdev">
+							<video id="graphicsdev-video" width="480" height="320" controls>
+								  <source src="videos/graphicsdev.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video> 
+						</div>
+						<div id="gamedev">
+							<video id="gamedev-video" width="480" height="320" controls>
+	 								 <source src="videos/gamedev.mp4" type="video/mp4">
+
+								Your browser does not support the video tag.
+							</video> 
+						</div>
+						<div id="webdev" class="projects-info">
+							<h2>Website</h2>
+							<p >
+								This website is itself is a project which some students started developing on the go with learning.
+								The code is available at
+								<br>
+							</p>
+							<a href="https://github.com/dev-society/dev-society.github.io" >Github Repo</a>
+						</div>
+					</p>
+
+				</div>
+			</div>
+
+		</div>
 
 
 	</section>
+<!--
 
 	<section class="graphics" id="graphics">
 		<h1>Graphics and Game Development</h1>
@@ -61,6 +104,7 @@
 		<h1>Android Development</h1>
 	</section>
 
+-->
 
 
 
@@ -72,7 +116,7 @@
 				<div id="footer">
 				<div class="social-media">
 					<h2>Follow us on</h2>
-					<p><a href="mailto:devsocietybit@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> devsocietybit@gmail.com</a></p>
+					<p><a href="mailto:devsociety.bit@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> devsociety.bit@gmail.com</a></p>
 
 					<p><a href="fb.com/devsocietybit"><i class="fab fa-facebook-square"></i> /devsocietybit</a></p>
 
