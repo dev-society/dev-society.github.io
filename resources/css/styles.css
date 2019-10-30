@@ -16,6 +16,7 @@ html{
 	font-size:20px ;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
 	/*for smooth rendering of text*/
 }
 
@@ -682,4 +683,63 @@ footer a{
 .projects-info a{
 	margin-top:1%;
 	margin-left:43%;
+}
+
+
+
+/********************************************************************
+					MEMBERS PAGE
+
+********************************************************************************/
+
+.members-header{
+	background: linear-gradient( 90deg , #FFEE58 ,#C0CA33  , #AFB42B , #689F38);
+	height:65vh;
+	color: #485460;
+}
+
+.members-header h1 {
+	text-align: center;
+	padding:.2rem;
+}
+
+.members-header h2{
+	text-align: center;
+	padding: .4rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.members-list{
+	color:#485460;
+	margin:0;
+	height: 300vh;
+	padding-top: 3%;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+
+
+.col{
+	width: 25%;
+	float: left;
+	border: 1px solid black;
+	height: auto;
+	/*Height is set to auto , so that border is set to auto adjustment*/
+	align-content: center;
+	text-align: center;
+	padding:2% 2%;
+	margin-left: 3%;
+	margin-bottom: 3%;
+}
+
+.col:hover{
+	transition: .01s;
+	box-shadow: 1.5px 3px green;
+}
+.members-container img{
+	height: 10rem;
+	width: auto;
+	border-radius: 80%;
 }
