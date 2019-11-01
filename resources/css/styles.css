@@ -75,17 +75,22 @@ body{
 	color: white;
 }
 
+.hackatron{
+	padding-bottom: 3em;
+}
+
 .hackatron-btn{
 	text-align: center !important;
-	width: 27%;
+	width: 25%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: .2em;
-	padding-bottom: .2em;
+	padding-top: .4em;
+	padding-bottom: .4em;
 	text-decoration: none !important;
 	background-color: #2a0268 ;
 	color: white !important;
-	border-radius: 5px;
+	border-radius: 2em;
+
 }
 
 .hackatron-btn a{
@@ -222,12 +227,12 @@ nav li{
 
 
 header{
-	background-image: linear-gradient(rgba(0 , 0 , 0 ,0.6) , rgba(0 , 0 , 0 ,0.6)) , url(images/bg2.jpg);
+	background-image: linear-gradient(rgba(0 , 0 , 0 ,0.6) , rgba(0 , 0 , 0 ,0.4)) , url(images/bg2.jpg);
 	
 	/*-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 75% 90%, 50% 100%, 20% 86%, 0 100%, 0% 35%, 0 0);
 	clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 75% 90%, 50% 100%, 20% 86%, 0 100%, 0% 35%, 0 0); */
 	
-	height: 100vh;
+	height: auto;
 	background-size: cover;
 	background-position: center;
 	overflow-y:none; 
