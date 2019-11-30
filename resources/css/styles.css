@@ -5,7 +5,7 @@
 	width: 100%;
 	height: 100%;
 	overflow-x:hidden; 
-	overflow-y: hidden;
+
 }
 
 :root {
@@ -23,7 +23,7 @@ html{
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
-
+	overflow-x: hidden;
 	/*for smooth rendering of text*/
 	text-decoration: none;
 }
@@ -186,6 +186,14 @@ nav a{
 
 .about-hncc .card li{
 	text-align: justify;
+	list-style: none;
+}
+
+.tech-stacks li{
+	text-transform: uppercase;
+	padding: .2em .4em .2em .4em;
+	border:solid var(--dark-color) .05em;
+	box-shadow: 0 .4em 1em 0 rgba(0,0,0,0.2);
 }
 
 .about-hncc .card:hover{
@@ -193,10 +201,13 @@ nav a{
 	color: green;
 }
 
-
-
-
-
+.carousel {
+	margin:auto;
+	margin:auto;
+	width: 80%;
+	height: auto;
+	align-content: center;
+}
 
 
 
