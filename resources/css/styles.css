@@ -1,7 +1,7 @@
 .{
 	margin:0px ;
 	padding:0px ;
-	font-family: 'Solway', serif;
+	font-family: 'Raleway', sans-serif;
 	width: 100%;
 	height: 100%;
 	overflow-x:hidden; 
@@ -9,8 +9,9 @@
 }
 
 :root {
-    --darkest:#1a2023;
-    --dark-color:#1a2023;
+	/*1a2023*/
+    --darkest:#121212;
+    --dark-color:#121212;
     --light-color:#b8b8d1;
     --lightest-color:#fffffb;
     --lime:#CDDC39;
@@ -18,7 +19,7 @@
 
 html{
 	/*since html is basically of text , thus name is just color*/
-	font-family: 'Solway', serif;
+	font-family: 'Raleway', sans-serif;
 	/*arial for backup if internet connection is not working , sans-serif is a  css keyword*/
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
@@ -37,11 +38,11 @@ body{
 
 
 *:not(i){
-  font-family: 'Solway', serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 nav{
-	margin-top: 2em;
+	margin-top: 1em;
 	margin-right: 4%;
 	margin-left: 4%;
     background-color:#fffffb ;
@@ -51,7 +52,7 @@ nav{
     z-index: 1;
     width: 92%;
     border-radius: 15px;
-   	border:.1em solid var(--dark-color);
+    box-shadow: .1em .1em 1em #121212;
 }
 
 nav ul{
@@ -66,6 +67,8 @@ nav a{
 
 .top{
   height: auto;
+  margin:0;
+  padding-top: 7em;
   padding-bottom: 4em;
 }
 
@@ -115,8 +118,94 @@ nav a{
 }
 
 .header-content{
-
+	padding-top: 0;
+	margin-top: 0;
 }
+
+
+/* Floating Social Media Bar Style Starts Here */
+
+.float-sm{
+	color: var(--dark-color);
+}
+
+.float-sm i{
+	font-size: 1.8em;
+	padding-left: .2em;
+	margin-top: .5em;
+	color: var(--dark-color);
+}
+
+
+.fl-fl {
+  background: var(--lime);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding: .5em;
+  width: 19em;
+  position: fixed;
+  right: -16em;
+  font-size: .8em;
+  z-index: 1000;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+
+  color: var(--dark-color);
+  border-radius: .6em;
+  padding-right: .2em;
+  margin: 0;
+  font-size: .8em;
+  border: .1em #121212;
+}
+
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+  color: var(--dark-color) !important;
+  font-size: .7em;
+}
+
+.fl-fl a:hover{
+	text-decoration: none;
+}
+
+/*.float-fb {
+  top: 20em;
+}*/
+
+.float-tw {
+  top: 21em;
+  width: ;
+}
+
+.float-gp {
+  top: 26.4em;
+}
+
+.float-rs {
+  top: 31.8em;
+}
+
+.float-ig {
+  top: 37.2em;
+}
+
+/*.float-pn {
+  top: 435px;
+}*/
+/* Floating Social Media Bar Style Ends Here */
+
+
 
 .img-fluid{
   max-height: 43vh;
@@ -128,7 +217,7 @@ nav a{
   width: auto;
   margin-left:auto;
   margin-right: auto;
-  margin-top: 8em;
+  margin-top: 3em;
   margin-bottom: 1em;
 }
 
@@ -161,11 +250,19 @@ nav a{
   .header-img{
     height: 30vh;
     padding-top: 0em;
-    margin-top: 0em;
+    margin-top: 2em;
+  }
+
+  .top{
+  	padding-top: 2.5em;
   }
 
   nav a{
   	width: 92%;
+  }
+
+  .text-center{
+  	padding-top: 0;
   }
 }
 
@@ -191,14 +288,50 @@ nav a{
 
 .tech-stacks li{
 	text-transform: uppercase;
-	padding: .2em .4em .2em .4em;
-	border:solid var(--dark-color) .05em;
 	box-shadow: 0 .4em 1em 0 rgba(0,0,0,0.2);
+	padding-left: .4em;
+	margin-left: 0;
+	letter-spacing: .1em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: .4em;
+
+	display: inline-block;
+	margin-bottom: 1.5em;
+
+    -webkit-animation-name:              shake;    
+    -webkit-animation-duration:          5s;
+    -webkit-animation-iteration-count:   infinite;
+    -webkit-animation-timing-function:   linear;
+    -webkit-transform-origin:            50% 100%;
+
+
+}
+
+
+@-webkit-keyframes shake {
+  0%  { -webkit-transform:     translate(2px, 1px) rotate(0deg); }
+  10% { -webkit-transform:     translate(-1px, -2px) rotate(-2deg); }
+  20% { -webkit-transform:     translate(-3px, 0px) rotate(3deg); }
+  30% { -webkit-transform:     translate(0px, 2px) rotate(0deg); }
+  40% { -webkit-transform:     translate(1px, -1px) rotate(1deg); }
+  50% { -webkit-transform:     translate(-1px, 2px) rotate(-1deg); }
+  60% { -webkit-transform:     translate(-3px, 1px) rotate(0deg); }
+  70% { -webkit-transform:     translate(2px, 1px) rotate(-2deg); }
+  80% { -webkit-transform:     translate(-1px, -1px) rotate(4deg); }
+  90% { -webkit-transform:     translate(2px, 2px) rotate(0deg); }
+  100%{ -webkit-transform:     translate(1px, -2px) rotate(-1deg); }
+ }
+
+
+.tech-stacks ul{
+	text-align: center;
 }
 
 .about-hncc .card:hover{
 	box-shadow: 0 1.5em 3em 0 rgba(0,0,0,0.2);
-	color: green;
+	color: black;
+	transition: .8s;
 }
 
 .carousel {
@@ -265,7 +398,7 @@ img {
 }
 
 .mascot{
-  background-color: rgb(35, 34, 38);
+  background-color: var(--dark-color);
   color:white;
 }
 
@@ -284,12 +417,12 @@ img {
 }
 
 .sec{
-  background-color: #232226;
+  background-color: var(--dark-color);
   color: #fffffb;
 }
 
 .prizes{
-  background-color: #232226;
+  background-color: var(--dark-color);
 }
 
 .sponsors .card{
@@ -299,7 +432,7 @@ img {
 
 .faq{
   margin-bottom: 3em;
-  background-color: var(--darkest);
+  background-color: var(--dark-color);
 }
 
 .faq h1 , .faq h2{
@@ -307,13 +440,14 @@ img {
 }
 
 .accordion{
-  background-color: var(--darkest);
+  background-color: var(--dark-color);
   color: var(--lightest-color);
 }
 
 footer{
   padding-top:2.5em;
   text-align: center;
+  padding-bottom: 2em;
 }
 
 footer a{
