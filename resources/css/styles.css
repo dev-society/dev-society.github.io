@@ -488,12 +488,8 @@ footer a:hover{
 	background-color: var(--dark-color);
 }
 
-.team-section .container{
-	margin-left: auto;
-	margin-right: auto;
-}
 
-.team-section .card{
+.founders .card{
 	border: none;
 	margin-bottom: 1em;
 	padding-bottom: 0em;
@@ -501,20 +497,16 @@ footer a:hover{
 	padding-right: 1.3em;
 	padding-top: 1em;
 	border-radius: 1em;
+	filter: grayscale(100%);
 }
 
 .team-section img{
 	width: 13em;
-	height: auto;
+	margin:auto;
 }
 
-.founders .card{
 
-	filter: grayscale(100%);
-
-}
-
-.founders .card:hover{
+.team-section .card:hover{
 	box-shadow: 0 1.5em 3em 0 rgba(0,0,0,0.2);
 	transition: .5s;
 	filter: none;
@@ -529,14 +521,32 @@ footer a:hover{
 }
 
 .post-bearers .card{
+	width: 10em;
+	height: auto;
+	border:none;
 	padding: 0;
 	margin:0;
+	filter: grayscale(100%);
+	
 }
 
+.post-bearers img{
+	width: 13em;
+	height: auto;
+}
+
+
+
 @media only screen and (max-width: 768px) {
-  .card {
-    
-  }
+
+	.founders .card{
+		/*By this margin auto it is centering*/
+		margin:auto;
+	    margin-bottom: 1em;
+	}
+
+
+
 }
 
 
@@ -552,7 +562,7 @@ footer a:hover{
 
 .hovereffect .overlay {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
   overflow: hidden;
   top: 0;
