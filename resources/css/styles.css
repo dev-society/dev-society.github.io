@@ -527,7 +527,10 @@ footer a:hover{
 	padding: 0;
 	margin:0;
 	filter: grayscale(100%);
-	
+}
+
+.post-bearers .card-columns{
+	padding: 0em;
 }
 
 .post-bearers img{
@@ -535,7 +538,11 @@ footer a:hover{
 	height: auto;
 }
 
-
+.img-responsive{
+	width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -544,9 +551,59 @@ footer a:hover{
 		margin:auto;
 	    margin-bottom: 1em;
 	}
+}
 
 
 
+@media (max-width: 26em){
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        margin-left: 2em;
+    }
+}
+
+@media (max-width: 18em){
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        margin-left: 4em;
+    }
+}
+
+
+@media (min-width: 26em){
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 62em) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (min-width: 75em) {
+    .card-columns {
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5;
+    }
 }
 
 
