@@ -562,6 +562,13 @@ footer a:hover{
         column-count: 2;
         margin-left: 2em;
     }
+
+    .hovereffect a.info{
+    	font-size: .8em;
+        padding: .1em .25em;
+        border: .2px solid #fff;
+        margin-right: .02em;
+    }
 }
 
 @media (max-width: 18em){
@@ -663,10 +670,10 @@ footer a:hover{
 .hovereffect a.info {
   display: inline-block;
   text-decoration: none;
-  padding: .3em .6em;
+  padding: .15em .4em;
   border: 1px solid #fff;
   margin: 50px 0 0 0;
-  background-color: transparent;
+  background-color: rgb(0,0,0,0.5);
 }
 
 .hovereffect a.info:hover {
