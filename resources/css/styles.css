@@ -346,6 +346,20 @@ nav a{
 	transition: .8s;
 }
 
+.branchChart{
+	width: 20em;
+	height: auto;
+	padding-right: 2em;
+	padding-bottom: 4em;
+}
+
+.distChart{
+	width: 20em;
+	height: auto;
+	padding-right: 2em;
+	padding-bottom: 4em;
+}
+
 .carousel {
 	margin:auto;
 	margin:auto;
@@ -353,6 +367,32 @@ nav a{
 	height: auto;
 	align-content: center;
 }
+
+.stats{
+	border-top: .5em solid black;
+}
+
+.stat{
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.stat .card{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	border:none;
+	margin-left: auto;
+}
+
+.stat i{
+	color: #607D8B;
+}
+
+
+
+
+
+
 
 
 
@@ -564,7 +604,7 @@ footer a:hover{
     }
 
     .hovereffect a.info{
-    	font-size: .8em;
+    	font-size: 1.2em;
         padding: .1em .25em;
         border: .2px solid #fff;
         margin-right: .02em;

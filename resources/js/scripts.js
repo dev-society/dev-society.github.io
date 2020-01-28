@@ -10,7 +10,12 @@ $(window).ready(hideLoader).delay(4000);
 setTimeout(hideLoader, 20 * 1000);
 
 
+
+
 $(document).ready(function() {
+
+	var a = 0;
+
 	$(window).scroll(function() {
 
 		if($(window).scrollTop() > 200) {
@@ -22,8 +27,66 @@ $(document).ready(function() {
 			$('nav').removeClass('sticky-nav');
 		}
 
-	}
-	);
+		var ctx = document.getElementById("branchChart");
+			var branchChart = new Chart(ctx, {
+			  type: 'pie',
+			  data: {
+			    labels: ['CSE/IT Undergrads', 'Non CSE/IT'],
+			    datasets: [{
+			      label: '# of Tomatoes',
+			      data: [20, 32],
+			      backgroundColor: [
+			        '#121212',
+			        '#CDDC39'
+			      ],
+			      borderColor: [
+			        '#121212',
+			        '#CDDC39'
+			      ],
+			      borderWidth: 1
+			    }]
+			  },
+			  options: {
+			   	cutoutPercentage: 40,
+			    responsive: true
+
+			  }
+			});
+
+
+		var ctx = document.getElementById("distChart");
+			var distChart = new Chart(ctx, {
+			  type: 'pie',
+			  data: {
+			    labels: ['Developers', 'Designers','2D/3D Artists'],
+			    datasets: [{
+			      label: '# of Tomatoes',
+			      data: [46, 5,7],
+			      backgroundColor: [
+			        '#f44336',
+			        '#CDDC39',
+			        '#121212'
+			      ],
+			      borderColor: [
+			        '#f44336',
+			        '#CDDC39',
+			        '#121212'
+			      ],
+			      borderWidth: 1
+			    }]
+			  },
+			  options: {
+			   	cutoutPercentage: 40,
+			    responsive: true
+
+			  }
+			});
+
+	});
+
+
+
+
 
 	$('.js-nav-icon').click(function(){
 		var nav = $('.js-main-nav');
@@ -57,6 +120,35 @@ $(document).ready(function() {
 
 	})
 */
+		  var oTop = $('#counter').offset().top - window.innerHeight;
+			  if (a == 0 && $(window).scrollTop() > oTop) {
+			    $('.counter-value').each(function() {
+			      var $this = $(this),
+			        countTo = $this.attr('data-count');
+			      $({
+			        countNum: $this.text()
+			      }).animate({
+			          countNum: countTo
+			        },
+
+			        {
+
+			          duration: 2000,
+			          easing: 'swing',
+			          step: function() {
+			            $this.text(Math.floor(this.countNum));
+			          },
+			          complete: function() {
+			            $this.text(this.countNum);
+			            //alert('finished');
+			          }
+
+		        });
+		    });
+		    a = 1;
+		  }
+		
+
 
 		var graphicsdev = $("#graphicsdev");
 		var gamedev = $("#gamedev");
@@ -176,3 +268,4 @@ $(document).ready(function() {
 
 }  
 );
+
