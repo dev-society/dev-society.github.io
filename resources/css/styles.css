@@ -45,9 +45,10 @@ body{
     background: url('preloader.gif') no-repeat center center;
     background-color: rgba(255,255,255,1) ;
     position: absolute;
-    height:20em;
+    height:100%;
     width: auto;
     z-index: 9999999;
+    align-content: center;
 }
 
 
@@ -388,6 +389,10 @@ nav a{
 	color: #607D8B;
 }
 
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
 
 
 
