@@ -1,13 +1,36 @@
 
-function hideLoader() {
+/*function hideLoader() {
     $('#preloader').hide();
 }
 
-$(window).ready(hideLoader).delay(4000);
+$(window).ready(hideLoader).delay(4000);*/
 
+var loader;
+
+function loadNow(opacity) {
+    if (opacity <= 0) {
+        displayContent();
+    } else {
+        loader.style.opacity = opacity;
+        window.setTimeout(function() {
+            loadNow(opacity - 0.05);
+        }, 50);
+    }
+}
+
+function displayContent() {
+    loader.style.display = 'none';
+   // document.getElementById('content').style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    loader = document.getElementById('preloader');
+    loadNow(1);
+});
 
 // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-setTimeout(hideLoader, 20 * 1000);
+//setTimeout(hideLoader, 20 * 1000);
+setTimeout(loadNow, 20 * 1000);
 
 
 

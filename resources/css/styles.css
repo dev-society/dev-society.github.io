@@ -41,6 +41,8 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 
+/*
+
 #preloader {
     background: url('preloader.gif') no-repeat center center;
     background-color: rgba(255,255,255,1) ;
@@ -50,8 +52,16 @@ body{
     z-index: 9999999;
     align-content: center;
 }
+*/
 
-
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    overflow: visible;
+    background: #fff url('preloader.gif') no-repeat center center;
+}
 
 
 nav{
@@ -533,6 +543,9 @@ footer a:hover{
 	background-color: var(--dark-color);
 }
 
+.team-section .row{
+
+}
 
 .founders .card{
 	border: none;
