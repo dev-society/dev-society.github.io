@@ -1,9 +1,4 @@
 
-/*function hideLoader() {
-    $('#preloader').hide();
-}
-
-$(window).ready(hideLoader).delay(4000);*/
 
 var loader;
 
@@ -20,7 +15,6 @@ function loadNow(opacity) {
 
 function displayContent() {
     loader.style.display = 'none';
-   // document.getElementById('content').style.display = 'block';
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -29,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-//setTimeout(hideLoader, 20 * 1000);
 setTimeout(loadNow, 20 * 1000);
 
 
@@ -172,10 +165,6 @@ $(document).ready(function() {
 			});
 
 
-		//	if($(window).scrollTop() > $('#stats')) {
-		//	$(window).off('scroll');
-
-		//	}
 
 
 	});
@@ -196,30 +185,10 @@ $(document).ready(function() {
 
 		nav.slideToggle(300);
 
-/*
-
-		if (icon_class.hasClass('fas fa-bars')
-		{
-			icon_class.addClass('fas fa-times');
-			icon_class.removeClass('fas fa-bars');
-		}
-
-		else
-		{
-			icon_class.addClass('fas fa-bars');
-			icon_class.removeClass('fas fa-times');
-		}
-*/
 
 
 	});
 
-/*	$('.events-image').hover(function(){
-
-
-
-	})
-*/
 		  var oTop = $('#counter').offset().top - window.innerHeight;
 			  if (a == 0 && $(window).scrollTop() > oTop) {
 			    $('.counter-value').each(function() {
@@ -240,7 +209,6 @@ $(document).ready(function() {
 			          },
 			          complete: function() {
 			            $this.text(this.countNum);
-			            //alert('finished');
 			          }
 
 		        });
@@ -258,19 +226,6 @@ $(document).ready(function() {
 		webdev.hide();
 
 		$("#graphicsDevBtn").click(function(){
-//			$("video").setAttribute("src" , "images/graphicsdev.mp4");
-				//$("#projects-video source").src = 'images/graphicsdev.mp4'; 
-//			
-/*			if($("#projects-video source").length){
-				$("#projects-video").empty();
-			}
-
-
-
-			$("#projects-video").html('<source src="images/graphicsdev.mp4" type="video/mp4"></source>' );
-			$("#content video")[0].load();
-			location.reload();
-*/
 				graphicsdev.show(800);
 
 				gamedev.hide();
@@ -278,18 +233,7 @@ $(document).ready(function() {
 			});
 
 
-			$("#gameDevBtn").click(function(){
-		//	$("video").setAttribute("src" , "images/graphicsdev.mp4");
-/*
-				if($("#projects-video source").length){
-					$("#projects-video").empty();
-				}
-
-
-				$("#projects-video").empty();
-				$("#projects-video").html('<source src="images/gamedev.mp4" type="video/mp4"></source>' );
-				$("#content video")[0].load();
-*/				
+			$("#gameDevBtn").click(function(){				
 				gamedev.show(800);
 
 				graphicsdev.hide();
