@@ -791,3 +791,55 @@ footer a:hover {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+
+.project-card {
+  position: relative;
+  height: 35rem;
+  width: 26rem;
+  overflow: hidden;
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transform: scale(1);
+  transition: all .7s cubic-bezier(.32,.56,.25,.87);
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(.1);
+  padding: 7rem 3rem;
+  width: 100%;
+  height: 100%;
+  transition: all .7s cubic-bezier(.32,.56,.25,.87);
+  opacity: 0;
+  background-image: linear-gradient(to right bottom, rgb(205, 220, 57), rgba(245, 247, 224, 0.616));
+}
+
+.rule{
+  width: 10%;
+  opacity: 0;
+  border-bottom: 1px solid grey;
+  margin-bottom: 2rem;
+  transition: all .7s ease-in-out .2s;
+}
+
+.project-card:hover .front {
+  transform: scale(5);
+  opacity: 0;
+}
+
+.project-card:hover .back {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-card:hover .rule{
+  width: 90%;
+  opacity: 1;
+}
