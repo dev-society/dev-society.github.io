@@ -17,6 +17,8 @@
   --lime: #CDDC39;
   --project-bg-dark: rgb(0, 160, 252);
   --project-bg-light: rgb(161, 217, 231);
+  --profile-bg-dark: rgb(22, 26, 236);
+  --profile-bg-light: rgb(213, 209, 233);
 }
 
 html {
@@ -901,7 +903,7 @@ footer a:hover {
   padding: 3rem 2rem;
   border: 1px solid rgb(191, 184, 226);
   border-radius: 10px;
-  background: linear-gradient(to right bottom, rgb(93, 7, 231), rgb(213, 209, 233));
+  background: linear-gradient(to right bottom, var(--profile-bg-dark), var(--profile-bg-light));
 }
 
 .testimonial-carousel-icon {
@@ -910,7 +912,7 @@ footer a:hover {
 }
 
 #testimonial-carousel .carousel-inner {
-  padding: 0 10rem;
+  padding: 0 8rem;
 }
 
 @media (max-width: 800px) {
