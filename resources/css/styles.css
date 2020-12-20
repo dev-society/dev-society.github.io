@@ -798,94 +798,6 @@ footer a:hover {
 /*----------- PROJECT SECTION -------------*/
 
 .project-card {
-  position: relative;
-  height: 35rem;
-  width: 26rem;
-  overflow: hidden;
-}
-
-.front {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  transform: scale(1);
-  transition: all .8s cubic-bezier(.32, .56, .25, .87);
-}
-
-.back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: scale(.1);
-  padding: 7rem 3rem;
-  width: 100%;
-  height: 100%;
-  transition: all 1s cubic-bezier(.32, .56, .25, .87);
-  opacity: 0;
-  background-image: linear-gradient(to right bottom, rgb(205, 220, 57), rgba(245, 247, 224, 0.616));
-}
-
-.rule {
-  width: 10%;
-  opacity: 0;
-  border-bottom: 1px solid grey;
-  margin-bottom: 2rem;
-  transition: all .8s ease-in-out .2s;
-}
-
-.project-card:hover .front {
-  transform: scale(5);
-  opacity: 0;
-}
-
-.project-card:hover .back {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.project-card:hover .rule {
-  width: 90%;
-  opacity: 1;
-}
-
-
-
-
-/*------------- TESTIMONIAL SECTION ---------------*/
-.testimonial {
-  border-bottom: .4em solid black;
-  box-shadow: 0 0.2em 0 0 rgba(0, 0, 0, 0.2);
-}
-
-.profile {
-  /* background:
-    linear-gradient(to bottom right, var(--profile-bg-dark) 0%, var(--profile-bg-light) 50%, transparent 50%),
-    linear-gradient(to top right, transparent 50%, var(--profile-bg-dark) 50%, var(--profile-bg-light) 100%); */
-  background:
-    linear-gradient(to bottom, var(--profile-bg-dark) 0%, var(--profile-bg-light) 50%, transparent 50%);
-  border-right: 2px solid var(--profile-bg-dark);
-  border-top-left-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  width: 30%;
-}
-
-.testimonial-description {
-  width: 70%;
-  padding: 2rem;
-}
-
-.testimonial-img {
-  border-radius: 50%;
-  height: 10rem;
-  width: 9rem;
-  border: 5px solid #fff;
-}
-
-.testimonial-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -899,16 +811,83 @@ footer a:hover {
   transition: all 0.3s ease 0s;
 }
 
-.testimonial-card:hover {
+.project-card:hover {
   box-shadow: 0 1.5em 3em 0 rgba(0, 0, 0, 0.2);
 }
 
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 2rem;
+}
+
+.rule {
+  width: 40%;
+  opacity: 1;
+  border-bottom: 1px solid rgb(160, 158, 158);
+  transition: all .8s ease-in-out .2s;
+}
+
+.project-card:hover .rule {
+  width: 90%;
+}
+
+.project__img-box {
+  background:
+    linear-gradient(to bottom, var(--profile-bg-dark) 0%, var(--profile-bg-light) 50%, transparent 50%);
+  border-right: 2px solid var(--profile-bg-dark);
+  border-top-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  width: 30%;
+}
+
+.img-box {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  height: 18rem;
+  width: 17rem;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+}
+
+.project__img {
+  width: 100%;
+  transition: all .3s;
+}
+
+.img-box:hover .project__img {
+  transform: scale(1.2);
+  filter: blur(3px) brightness(102%);
+}
+
+.project-caption {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(5px) scale(.2);
+  transition: all .3s;
+}
+
+.img-box:hover .project-caption {
+  opacity: 1;
+  transform: translateY(5px) scale(1);
+}
+
 @media (max-width: 600px) {
-  .testimonial-card {
+  .project-card {
     flex-direction: column;
   }
 
-  .profile {
+  .project__img-box {
     background:
       linear-gradient(to bottom right, var(--profile-bg-dark) 0%, var(--profile-bg-light) 100%);
     border-top-right-radius: 10px;
@@ -917,12 +896,51 @@ footer a:hover {
     width: 100%;
   }
 
-  .testimonial-img {
-    width: 12rem;
-    height: 13rem;
+  .img-box {
+    height: 18rem;
+    width: 18rem;
   }
 
-  .testimonial-description {
+  .project-description {
     width: 100%;
+  }
+}
+
+/*------------- TESTIMONIAL SECTION --------------*/
+
+#testimonial {
+  border-bottom: .4em solid black;
+  box-shadow: 0 0.2em 0 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 3rem;
+}
+
+#testimonial-carousel .carousel-item {
+  color: #fff;
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 10px;
+  background: linear-gradient(to right bottom, rgb(93, 7, 231), rgb(213, 209, 233));
+}
+
+.testimonial-carousel-icon {
+  color: #000;
+  font-size: 3rem;
+}
+
+#testimonial-carousel .carousel-inner {
+  padding: 0 10rem;
+}
+
+@media (max-width: 800px) {
+  #testimonial-carousel {
+    width: 95%;
+  }
+
+  #testimonial-carousel .carousel-inner {
+    padding: 0;
+  }
+
+  .testimonial-carousel-icon {
+    font-size: 2.5rem;
   }
 }
