@@ -15,8 +15,8 @@
   --light-color: #b8b8d1;
   --lightest-color: #fffffb;
   --lime: #CDDC39;
-  --profile-bg-dark: rgb(0, 160, 252);
-  --profile-bg-light: rgb(161, 217, 231);
+  --project-bg-dark: rgb(0, 160, 252);
+  --project-bg-light: rgb(161, 217, 231);
 }
 
 html {
@@ -857,29 +857,10 @@ footer a:hover {
   width: 17rem;
   align-items: center;
   justify-content: center;
-  transform: scale(1);
 }
 
 .project__img {
   width: 100%;
-  transition: all .3s;
-}
-
-.img-box:hover .project__img {
-  transform: scale(1.2);
-  filter: blur(3px) brightness(102%);
-}
-
-.project-caption {
-  position: absolute;
-  opacity: 0;
-  transform: translateY(5px) scale(.2);
-  transition: all .3s;
-}
-
-.img-box:hover .project-caption {
-  opacity: 1;
-  transform: translateY(5px) scale(1);
 }
 
 @media (max-width: 600px) {
@@ -917,7 +898,8 @@ footer a:hover {
 #testimonial-carousel .carousel-item {
   color: #fff;
   padding: 2rem;
-  border: 1px solid rgba(0, 0, 0, .125);
+  border: 1px solid rgb(191, 184, 226);
+  /* border: 1px solid rgba(0, 0, 0, .125); */
   border-radius: 10px;
   background: linear-gradient(to right bottom, rgb(93, 7, 231), rgb(213, 209, 233));
 }
