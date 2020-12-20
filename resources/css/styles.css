@@ -825,7 +825,7 @@ footer a:hover {
 }
 
 .rule {
-  width: 40%;
+  width: 45%;
   opacity: 1;
   border-bottom: 1px solid rgb(160, 158, 158);
   transition: all .8s ease-in-out .2s;
@@ -837,8 +837,8 @@ footer a:hover {
 
 .project__img-box {
   background:
-    linear-gradient(to bottom, var(--profile-bg-dark) 0%, var(--profile-bg-light) 50%, transparent 50%);
-  border-right: 2px solid var(--profile-bg-dark);
+    linear-gradient(to bottom, var(--project-bg-dark) 0%, var(--project-bg-light) 50%, transparent 50%);
+  border-right: 2px solid var(--project-bg-dark);
   border-top-left-radius: 10px;
   display: flex;
   align-items: center;
@@ -860,6 +860,7 @@ footer a:hover {
 }
 
 .project__img {
+  /* height: 100%; */
   width: 100%;
 }
 
@@ -870,7 +871,7 @@ footer a:hover {
 
   .project__img-box {
     background:
-      linear-gradient(to bottom right, var(--profile-bg-dark) 0%, var(--profile-bg-light) 100%);
+      linear-gradient(to bottom right, var(--project-bg-dark) 0%, var(--project-bg-light) 100%);
     border-top-right-radius: 10px;
     border-right: 0;
     padding: 3rem;
@@ -897,9 +898,8 @@ footer a:hover {
 
 #testimonial-carousel .carousel-item {
   color: #fff;
-  padding: 2rem;
+  padding: 3rem 2rem;
   border: 1px solid rgb(191, 184, 226);
-  /* border: 1px solid rgba(0, 0, 0, .125); */
   border-radius: 10px;
   background: linear-gradient(to right bottom, rgb(93, 7, 231), rgb(213, 209, 233));
 }
@@ -922,7 +922,17 @@ footer a:hover {
     padding: 0;
   }
 
+  #testimonial-carousel .carousel-item {
+    padding: 2rem 5rem;
+  }
+
   .testimonial-carousel-icon {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #testimonial-carousel .carousel-item {
+    padding: 3rem;
   }
 }
