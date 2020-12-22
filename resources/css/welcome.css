@@ -234,10 +234,10 @@ nav a {
 }
 
 .typewriter .wrap {
-    color: var(--lime);
+    color: #fff;
     font-family: 'Bebas Neue';
     letter-spacing: .1em;
-    font-size: 1.3em;
+    font-size: 2em;
 }
 
 /* The typing effect */
@@ -968,17 +968,17 @@ footer a:hover {
 }
 
 .welcome-text {
-    height: 7rem;
-    width: 50%;
+    height: 6rem;
+    width: 45%;
     display: block;
     margin: auto;
     margin-top: -20px;
 }
 
 .header-img {
-    max-height: 23rem !important;
-    width: 25% !important;
-    margin-top: -5px;
+    max-height: 17.5rem !important;
+    width: 20% !important;
+    margin-top: 10px;
 }
 
 .top {
@@ -1019,6 +1019,13 @@ footer a:hover {
     background: #fff;
 }
 
+.mobile h2{
+    font-size: 3rem;
+}
+
+.typewriter{
+    margin-bottom: 1rem;
+}
 
 
 @media (max-width: 700px) {
@@ -1048,9 +1055,9 @@ footer a:hover {
         position: absolute;
         top: -3rem;
         left: -11rem;
-        height: 185%;
-        /* opacity: .9; */
+        height: 170%;
         width: 207vw;
+        opacity: .8;
     }
 
     .right__box {
@@ -1059,5 +1066,17 @@ footer a:hover {
 
     .fl-fl {
         background: #fff;
+    }
+
+    .mobile h2{
+        font-size: 2.3rem;
+    }
+
+    .typewriter{
+        margin-bottom: 0;
+    }
+
+    .typewriter .wrap {
+        font-size: 1.7em;
     }
 }
