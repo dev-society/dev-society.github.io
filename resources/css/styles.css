@@ -955,3 +955,11 @@ footer a:hover {
     margin-top: -.5rem;
   }
 }
+
+
+/*------------ TEAM Page ---------------*/
+.team-img{
+  height: 15.5rem;
+  border-radius: 10px;
+  margin-bottom: 10px !important;
+}
