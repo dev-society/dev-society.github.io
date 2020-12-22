@@ -1,608 +1,851 @@
 <!DOCTYPE html>
 <html lang='en'>
-	<head>
 
-		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<head>
 
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/css/welcome.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Raleway:300,400&display=swap" rel="stylesheet">
 
-		
-		<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
-		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-		
-		<link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Raleway:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="external/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-		<link rel="stylesheet" type="text/css" href="external/css/all.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <title>HnCC, BIT Sindri</title>
 
-    <link rel="icon" type="image/ico" href="favicon.ico"> 
-		<title>HnCC, BIT Sindri</title>
-
-
-		<style>
+    <style>
         .top {
-        background-color: #121212;
-	      background-attachment: fixed;
-			  background-position: center;
-			  background-repeat: no-repeat;
-			  background-size: cover;
-        } 
-        
-    	</style>
-	</head>
-	
-	<body>
+            background-color: #121212;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
 
 
-		<div id="preloader" >
-			<img src="preloader.gif" style="width: auto; height: 80vh; background: #fff no-repeat center center; margin-left: auto; margin: auto; text-align: center; display: block;">
-		</div>
+    <div id="preloader">
+        <img src="preloader.gif"
+            style="width: auto; height: 80vh; background: #fff no-repeat center center; margin-left: auto; margin: auto; text-align: center; display: block;">
+    </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="hero-nav">
-          <div class="logo">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="hero-nav">
+        <div class="logo">
 
-            <a class="navbar-brand" style="color:#fffffb;" href="https://dev-society.github.io"> <img style="width:2.7em; height:auto;" src="images/hncc-logo.png" alt="Developer's Society"> </a>
+            <a class="navbar-brand" style="color:#fffffb;" href="https://hnccbits.com/"> <img
+                    style="width:2.7em; height:auto;" src="images/welcome-2k20/hncclogo-1.png"
+                    alt="Hackathon & Coding Club"> </a>
 
-          </div>
+        </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto text-center">
-                
-     
-                  <a class="nav-link " style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em; " href="#about-us">About Us</a>
-                
-                  <a class="nav-link "style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em;" href="#stats">Stats</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                
-                  <a class="nav-link "style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em;" href="#events">Events</a>
-            
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-center">
 
-                  <a class="nav-link "style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em;" href="team.html">Team</a>
+                <a class="nav-link" href="#about-us">About Us</a>
 
-                  <a class="nav-link "style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em;" href="https://blog.hnccbits.com">Blog</a>
-                
-                  <a class="nav-link "style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em;" href="#footer">Contact Us</a>
-                
+                <a class="nav-link" href="#stats">Stats</a>
 
-              </ul>
-              
-            </div>
-        </nav>
+                <a class="nav-link" href="#events">Events</a>
 
+                <a class="nav-link" href="#projects">Projects</a>
 
-		<!-- Floating Social Media bar Starts -->
-		<div class="float-sm">
-		  <div class="fl-fl float-tw">
-		    <i class="fab fa-facebook-f"></i>
-		    <a href="https://www.facebook.com/hnccbits/" target="_blank">&nbsp &nbsp Like us on fb</a>
-		  </div>
-		  <div class="fl-fl float-gp">
-		    <i class="fab fa-github"></i>
-		    <a href="https://www.github.com/hnccbits" target="_blank">&nbsp &nbsp Check our Projects</a>
-		  </div>
-		  <div class="fl-fl float-rs">
-		    <i class="fab fa-linkedin-in"></i>
-		    <a href="https://www.linkedin.com/company/hnccbits" target="_blank">&nbsp &nbsp Follow us on linkedin</a>
-		  </div>
-		  <div class="fl-fl float-ig">
-		    <i class="fab fa-instagram"></i>
-		    <a href="https://www.instagram.com/hnccbits" target="_blank">&nbsp &nbsp Follow us on insta!</a>
-		  </div>
-		</div>
-		<!-- Floating Social Media bar Ends -->
+                <a class="nav-link" href="team.html">Team</a>
+
+                <a class="nav-link" href="https://blog.hnccbits.com">Blog</a>
+
+                <a class="nav-link" href="#footer">Contact Us</a>
+
+            </ul>
+
+        </div>
+    </nav>
 
 
-    <div class="top">    
-    <section >
+    <!-- Floating Social Media bar Starts -->
+    <div class="float-sm">
+        <div class="fl-fl float-tw">
+            <i class="fab fa-facebook-f"></i>
+            <a href="https://www.facebook.com/hnccbits/" target="_blank">&nbsp &nbsp Like us on fb</a>
+        </div>
+        <div class="fl-fl float-gp">
+            <i class="fab fa-github"></i>
+            <a href="https://www.github.com/hnccbits" target="_blank">&nbsp &nbsp Check our Projects</a>
+        </div>
+        <div class="fl-fl float-rs">
+            <i class="fab fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/company/hnccbits" target="_blank">&nbsp &nbsp Follow us on linkedin</a>
+        </div>
+        <div class="fl-fl float-ig">
+            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/hnccbits" target="_blank">&nbsp &nbsp Follow us on insta!</a>
+        </div>
+    </div>
+    <!-- Floating Social Media bar Ends -->
 
 
-    </section>
+    <div class="top">
+        <section>
 
-    <section class="header-content text-center">
-        <div class="container">
-            <div class="row">
-                
-              </div>
-              <div class="col-sm-12 mt-5">
+        </section>
 
-                <h2 style="color:#fffffb; font-weight: 400; letter-spacing: .08em;">Hackathon and Coding Club</h2>
-                <h4 style="color:#fffffb;">BIT Sindri , Dhanbad</h4>
-                <br>
+        <section class="header-content text-center">
+            <div class="container">
+                <div class="left__box">
+                    <picture>
+                        <source srcset="images/welcome-2k20/decor-mobile.png" alt="Left Decor" class="left__box-img"
+                            media="(max-width: 700px)">
 
-                <div class="typewriter" style="font-family: 'Bebas Neue';">
-	                <h5 class="typewrite"  data-period="2000" data-type='[ "We Design.", " We Develop.", "We Think.", "We Solve Problems.", "We Organize." ]'>	
-	   				  <span class="wrap"></span>
-	  				</h5>
-                </div> 
-
-
-
-                <img src="images/header-image.png" class="header-img img-fluid">
-
+                        <img srcset="images/welcome-2k20/decor-left.png" alt="Left Decor" class="left__box-img">
+                    </picture>
                 </div>
+                <div class="right__box">
+                    <img src="images/welcome-2k20/decor-right.png" alt="Right Decor" class="right__box-img">
                 </div>
 
-            </div>
-          </div>
-    </section>
-  </div>
+                <div class="row">
 
-  <!-- first section  -->
-  <section class ="about-hncc" id= "about-us">
- 
-      <div class="text-center">
-        <br><br>
-        <h1 style="font-family: 'Bebas Neue';" >What do we deal with ?</h1>
-        <br><br>
-      </div>
-      
-      <h5 class="about-text" style="padding-bottom: 2em;"> Hackathon and Coding Club (HnCC) is the official coding and development club of BIT Sindri. It was started with an initial motto to inculcate and improve collaborative coding culture in college. Our team expanded slowly in numbers and the spectrum of activities we deal with, expanded broadly. </h5>
+                </div>
+                <div class="col-sm-12 mt-5 mobile">
+
+                    <h2 style="color:#fffffb; font-weight: 400; letter-spacing: .08em; margin-top: -20px">
+                        <b>Hackathon and Coding Club</b>
+                    </h2>
+                    <h4 style="color:#fffffb;">BIT Sindri , Dhanbad</h4>
+                    <br>
+                    <div class="typewriter" style="font-family: 'Bebas Neue';">
+                        <h5 class="typewrite" data-period="2000"
+                            data-type='[ "We Design.", " We Develop.", "We Think.", "We Solve Problems.", "We Organize." ]'>
+                            <span class="wrap"></span>
+                        </h5>
+                    </div>
+                    <br>
+                    <img src="images/welcome-2k20/welcome-text.png" alt="Welcome Message" class="welcome-text">
+                    <img src="images/welcome-2k20/santa.png" class="header-img img-fluid">
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- first section  -->
+    <section class="about-hncc" id="about-us">
+
+        <div class="text-center">
+            <br><br>
+            <h1 style="font-family: 'Bebas Neue';">What do we deal with ?</h1>
+            <br><br>
+        </div>
+
+        <h5 class="about-text" style="padding-bottom: 2em;">
+            Hackathon and Coding Club (HnCC) is the official coding and
+            development club of BIT Sindri. It was started with an initial motto to inculcate and improve collaborative
+            coding
+            culture in college. Our team expanded slowly in numbers and the spectrum of activities we deal with,
+            expanded
+            broadly.
+        </h5>
 
 
         <div class="row">
 
+            <div class="col-sm d-flex align-items-stretch">
+                <div class="card text-center ">
 
-          <div class="col-sm d-flex align-items-stretch">
-          	    <div class="card text-center ">
+                    <div class="container">
+                        <br>
+                        <img src="images/paper-plane.png" alt="Avatar"
+                            style="width:5.5em; height: auto; padding-bottom: 3.5em;">
 
-                  <div class="container">
-                      <br>
-                      <img src="images/paper-plane.png" alt="Avatar" style="width:5.5em; height: auto; padding-bottom: 4em;">
+                        <h3 style="font-family: 'Bebas Neue'; text-align: center;">Our Activities</h3>
+                        <p>
+                            <ul style="padding: 0 1.5rem;">
+                                <li>
+                                    We organize a national level hackathon, "Hackatron" every year. The first version of
+                                    this hackathon
+                                    was held in 16th-17th November 2019. Checkout more at <a
+                                        href="https://hackatron.hnccbits.com/"
+                                        target="_blank">hackatron.hnccbits.com</a>
+                                </li>
+                                <br>
+                                <li>
+                                    Organize sessions related to various technology stacks such as Development, Open
+                                    Source etc.
+                                </li>
+                                <br>
+                                <li>
+                                    Host competitions related to coding and other tech domains throughout the year and
+                                    Techfest, BIT
+                                    Sindri
+                                </li>
+                                <br>
 
-                                            <h3 style="font-family: 'Bebas Neue'; text-align: center;">Our Activities</h3>
-                    <p>
-                    	<ul>
-                    		<li>We organize a national level hackathon, "Hackatron" every year. The first version of this hackathon was held in 16th-17th November 2019. Checkout more at <a href="https://hackatron.hnccbits.com/" target="_blank">hackatron.hnccbits.com</a></li><br>
-                    		<li>Organize sessions related to various technology stacks such as Development, Open Source etc</li>
-                    		<br>
-                    		<li>Host competitions related to coding and other tech domains throughout the year and Techfest, BIT Sindri</li><br>
+                                <li>
+                                    Develop real world projects and solve real world problems.Checkout our GitHub
+                                    account at <a href="https://github.com/hnccbits/" target="_blank">GitHub</a>
+                                </li>
+                                <br>
+                                <li>
+                                    We manage the official CodeChef Chapter of BIT Sindri, Dhanbad.
+                                    <br>
+                                    See more about our coding culture at our official site <a
+                                        href="https://contest.hnccbits.com/" target="_blank">contest.hnccbits.com</a>
+                                </li>
+                            </ul>
+                        </p>
 
-                    		<li>Develop real world projects and solve real world problems.Checkout our GitHub account.<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                    		 <a href="https://github.com/hnccbits/" target="_blank" style="font-size: 3em; color: black;"><i class="fab fa-github"></i></a>
-                    		</li>
-                    	</ul>
-                    </p>
+                    </div>
 
-                  </div>
-                </div> 
+                </div>
             </div>
 
 
             <div class="col-sm align-items-stretch">
-          	    <div class="card text-center">
+                <div class="card text-center">
 
-                  <div class="container">
-                    <h4 style="color: #232226"><b>  </b></h4>
-                      <br>
-                      <i class="fas fa-code" style="font-size: 4em;"></i>
-                      <br><br><br><br>
+                    <div class="container">
+                        <h4 style="color: #232226"><b> </b></h4>
+                        <br>
+                        <i class="fas fa-code" style="font-size: 4em;"></i>
+                        <br><br><br><br>
 
-                    <h3 style="font-family: 'Bebas Neue'; text-align: center;">Tech Stacks</h3> 
+                        <h3 style="font-family: 'Bebas Neue'; text-align: center;">Tech Stacks</h3>
+                        <p>
+                            <ul class="tech-stacks">
+                                <li><i class="fab fa-codepen"></i> Web Development</li><br>
+
+                                <li><i class="fab fa-android"></i> App Development</li><br>
+
+                                <li><i class="fas fa-gamepad"></i> Game Development</li><br>
+
+                                <li><i class="fas fa-pen-alt"></i> Graphics Development</li><br>
+
+                                <li><i class="fab fa-linux"></i> Open Source (Linux)</li><br>
+
+                                <li><i class="fab fa-python"></i> Machine Learning</li>
+                            </ul>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="stats" id="stats">
+        <h1 style="font-family: 'Bebas Neue'; text-align: center;">STATS</h1><br><br>
+
+        <div class="stat">
+            <div class="row">
+                <div class="col-sm">
+                    <canvas id="branchChart"></canvas><br><br>
+                </div>
+                <div class="col-sm">
+                    <div class="card text-center">
+                        <h1>
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                            <div class="counter">2,78,265</div>
+                        </h1>
+                        <h5>Lines of Code</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card text-center">
+                        <h1>
+                            <i class="fa fa-coffee" aria-hidden="true"></i>
+                            <div class="counter">352</div>
+                        </h1>
+                        <h5>Cups of Coffee</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <canvas id="distChart"></canvas><br><br>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+
+
+
+    <!-- second section -->
+    <section class="mascot" id="gallery">
+
+        <section class="gallery">
+            <h1 style="font-family: 'Bebas Neue'; text-align: center;">Glimpses</h1><br><br>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/hackatron-team-pic.jpg" alt="First slide"
+                            style="width: 98%; height: auto;">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/gallery1.jpg" alt="Second slide"
+                            style="width: 98%; height: auto;">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/gallery2.jpg" alt="Third slide"
+                            style="width: 98%; height: auto;">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/gallery3.jpg" alt="Fourth slide"
+                            style="width: 98%; height: auto;">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/gallery4.jpeg" alt="Fifth slide"
+                            style="width: 98%; height: auto;">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/gallery5.jpg" alt="Sixth slide"
+                            style="width: 98%; height: auto;">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/gallery6.png" alt="Seventh slide"
+                            style="width: 98%; height: auto;">
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+    </section>
+
+
+    <section class="hack" id="events">
+
+        <div class=" text-center">
+            <br><br>
+            <h1 style="font-family: 'Bebas Neue'; text-align: center;">Recent Events</h1>
+            <br><br>
+        </div>
+
+        <div class="container ">
+            <div class="row">
+
+                <div class="col-md-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/htober_final.png" alt="Avatar" style="width:100%">
+
+                        <div class="container">
+                            <h5 class="text-center"><b>HacktoberFest 2020</b></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/bitcode.png" alt="Avatar" style="width:100%">
+
+                        <div class="container">
+                            <h5 class="text-center"><b>BIT Code</b></h5>
+                            <p class="text-center">
+                                Monthly CP Events
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/tmc.jpeg" alt="Avatar" style="width:100%">
+
+                        <div class="container">
+                            <h5 class="text-center"><b>The Monsoon Code</b></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/codestorm.png" alt="Avatar" style="width:100%">
+
+                        <div class="container">
+                            <h5 class="text-center"><b>CODESTORM 2.0</b></h5>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/designatello.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h5 class="text-center"><b>Designatello</b></h5>
+                            <p class="text-center">Redesign the Designed</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/doty.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h5 class="text-center"><b>Developer of the Year</b></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/hackatron-poster.jpeg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h5><b>Hackatron</b></h5>
+                            <p>24 hour National Level Hackathon.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class=" text-center" id="projects">
+            <br><br>
+            <h1 style="font-family: 'Bebas Neue'; text-align: center;">Our Projects</h1>
+            <br><br>
+        </div>
+
+        <div class="container">
+            <div class="project-card">
+                <div class="project__img-box">
+                    <div class="img-box">
+                        <img src="images/projects/contest-page.jpeg" alt="avatar" class="project__img">
+                    </div>
+                </div>
+
+                <div class="project-description text-center">
+                    <h2>HnCC Contest Page</h2>
+                    <div class="rule"></div>
+                    <br>
                     <p>
-                    	<ul class="tech-stacks">
-                    		<li><i class="fab fa-codepen"></i> Web Development</li><br>
-
-                    		<li><i class="fab fa-android"></i> App Development</li><br>
-
-                    		<li><i class="fas fa-gamepad"></i> Game Development 
-                    		</li><br>
-
-                    		<li><i class="fas fa-pen-alt"></i> Graphics Development 
-                    		</li><br>
-
-                    		<li><i class="fab fa-linux"></i> Open Source (Linux)
-                    		</li><br>
-
-                    		<li><i class="fab fa-python"></i> Machine Learning
-                    		</li>
-                    	</ul>
+                        This is a web-based project built beautifully by the team HnCC.
+                        <br>
+                        This is the official page for monthly coding
+                        contests held in BIT Sindri, under the official branding of CodeChef.
+                        Through this site, you will make yourself updated for the upcoming contests, editorials,
+                        leaderboard, etc.
                     </p>
-                   
-                  </div>
-                </div> 
+                    <div>
+                        <a href="https://github.com/hnccbits/contest.hnccbits.com" class="btn btn-primary mr-2"
+                            target="_blank">
+                            View On GitHub
+                        </a>
+                        <a href="https://contest.hnccbits.com/" class="btn btn-secondary" target="_blank">
+                            View It Live!
+                        </a>
+                    </div>
+                </div>
             </div>
 
+            <div class="project-card">
+                <div class="project__img-box">
+                    <div class="img-box">
+                        <img src="images/projects/hncc-learn.png" alt="avatar" class="project__img">
+                    </div>
+                </div>
+
+                <div class="project-description text-center">
+                    <h2>HnCC Learn Website</h2>
+                    <div class="rule"></div>
+                    <br>
+                    <p>
+                        HnCC Learn is an open-source web-based project that anyone in the community can use, improve,
+                        and enjoy.
+                        <br>
+                        This is a community-driven platform for newbies, programmers, hackers, novices in their field.
+                        You will find
+                        a curated list of resources to start getting your hands dirty in any type of skill from design
+                        to
+                        development.
+                    </p>
+                    <div>
+                        <a href="https://github.com/hnccbits/learn.hnccbits.com" class="btn btn-primary mr-2"
+                            target="_blank">
+                            View On GitHub
+                        </a>
+                        <a href="https://learn.hnccbits.com/" class="btn btn-secondary" target="_blank">
+                            View It Live!
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project__img-box">
+                    <div class="img-box">
+                        <img src="images/projects/algo-visualiser.jpeg" alt="avatar" class="project__img">
+                    </div>
+                </div>
+
+                <div class="project-description text-center">
+                    <h2>Algorithm Visualizer App</h2>
+                    <div class="rule"></div>
+                    <br>
+                    <p>
+                        Algorithm Visualizer is an Android alternative to visualize Algorithms on a 2D Screen.
+                        <br>
+                        It is ad-free and open-sourced under MIT License.
+                    </p>
+                    <div>
+                        <a href="https://github.com/hnccbits/Algorithm-Visualizer" class="btn btn-primary mr-2"
+                            target="_blank">
+                            View On GitHub
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=project.teamvoyager.visualizer"
+                            class="btn btn-secondary" target="_blank">
+                            View It Live!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" text-center">
+            <br><br>
+            <h1 style="font-family: 'Bebas Neue'; text-align: center;">Intro and BootCamp Sessions</h1>
+            <br><br>
+        </div>
+
+        <div class="container ">
+            <div class="row">
+
+                <div class="col-md-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/mlsession.jpg" alt="Avatar" style="width:100%;">
+                        <div class="container">
+                            <h5><b>ML Session: Beginner to Kaggle</b></h5>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/pythonforml.png" alt="Avatar" style="width:100%;">
+                        <div class="container">
+                            <h5><b>Intro to Python for Machine Learning</b></h5>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/introtooops.png" alt="Avatar" style="width:100%;">
+                        <div class="container">
+                            <h5><b>OOPS for Android Development</b></h5>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/hacktoberfest.png" alt="Avatar" style="width:100%;">
+                        <div class="container">
+                            <h5><b>Hacktoberfest:Intro to Git and GitHub</b></h5>
+                            <p><a href="https://drive.google.com/open?id=1j6sd0g97uKG8CstMgifC9yidn1jDTKJV"
+                                    target="_blank">Presentation links</a></p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br><br><br>
+
+    </section>
+
+
+    <!-- Section: Testimonials -->
+    <section id="testimonial" class="text-center">
+
+        <div class=" text-center">
+            <br><br>
+            <h1 style="font-family: 'Bebas Neue'; text-align: center;">Testimonial</h1>
+            <br><br>
+        </div>
+
+        <div id="testimonial-carousel" class="slide carousel carousel-fade" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="mx-auto mb-5">
+                        <img src="images/dinesh-sir.jpg" class="rounded-circle img-fluid" alt="avatar">
+                    </div>
+
+                    <p style="padding: 5px">
+                        <i class="fas fa-quote-left"></i> It has been indeed a pleasure to be the professor In-Charge of
+                        the
+                        Hackathon and Coding Club of BIT Sindri. The organization has been aiming to impart knowledge
+                        and guidance
+                        to the students of the college that put their interests into the fields of Computer Science,
+                        Development,
+                        and Designing. The club has been successfully been providing the proper guidance, information,
+                        and help to
+                        the people who ask for it. The club has many members that work selflessly for the events that
+                        the club
+                        organizes and for providing the best. The club has kept my expression good as I get an
+                        opportunity to see
+                        the enthusiasm the students pose to learn new stuff and what's even better, is that the people
+                        inducted in
+                        the club are even more enthusiastic to give away what they know in the best way possible. My
+                        aspirations
+                        from the club include creating a dynamic environment for the interest of computer science and
+                        its
+                        applications in the campus, including development and designing which is working high in the
+                        sky, so that
+                        the students excel in their fields of interest, and put their ideas into reality. I wish the
+                        organization
+                        all the very best. It makes me honored to be associated with a club of such kind.
+                    </p>
+                    <h4 class="font-weight-bold">Dinesh Prabhakar</h4>
+                    <h6 class="font-weight-bold my-3">Prof. In-Charge, Information Technology</h6>
+                </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                <i class="fas fa-angle-left testimonial-carousel-icon"></i>
+            </a>
+            <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                <i class="fas fa-angle-right testimonial-carousel-icon"></i>
+            </a>
 
         </div>
 
     </section>
 
-  </section>
-
-  <section class="stats" id="stats">
-  		<h1 style="font-family: 'Bebas Neue'; text-align: center;" >STATS</h1><br><br>
-
-  		<div class="stat">
-  			<div class="row">
-  				<div class="col-sm">
-  					<canvas id="branchChart"></canvas><br><br>
-  				</div>
-  				<div class="col-sm">
-  					<div class="card text-center">
-						<h1><i class="fa fa-code" aria-hidden="true"></i>
-						<div class="counter">2,78,265</div></h1>
-						<h5>Lines of Code</h5>
-				</div>
-				</div>
-
-				<div class="col-sm">
-					<div class="card text-center">
-	  				  	<h1><i class="fa fa-coffee" aria-hidden="true"></i>
-						<div class="counter">352</div></h1>
-						<h5>Cups of Coffee</h5>
-					</div>
-				</div>
-
-  				<div class="col-sm">
-  					<canvas id="distChart"></canvas><br><br>
-  				</div>
-  			</div>
-  		</div>
-  		<br><br>
-  </section > 
-  		
-
-  <!-- second section -->
-  <section class="mascot" id="gallery">
-
-      <section class="gallery">
-      	<h1 style="font-family: 'Bebas Neue'; text-align: center;" >Glimpses</h1><br><br>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/gallery1.jpg" alt="First slide" style="width: 98%; height: auto;">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/gallery2.jpg" alt="Second slide" style="width: 98%; height: auto;">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/gallery3.jpg" alt="Third slide" style="width: 98%; height: auto;">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/gallery4.jpeg" alt="Fourth slide" style="width: 98%; height: auto;">
+    <!-- Section: Community Associations -->
+    <section class="community" id="community">
+        <div class=" text-center community-title">
+            <br><br>
+            <h1 style="font-family: 'Bebas Neue';color:#232226">Community Associations</h1>
+            <br><br>
         </div>
 
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/gallery5.jpg" alt="Fifth slide" style="width: 98%; height: auto;">
-        </div>
+        <div class="row mx-auto">
 
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/gallery6.png" alt="Sixth slide" style="width: 98%; height: auto;">
-        </div>
+            <div class="col-sm d-flex justify-content-center align-items-center mb-5">
+                <a href="https://www.codechef.com/campus_chapter/BIT%20Sindri" target="_blank">
+                    <img src="images/community/cc-logo.png" alt="Avatar" style="width:13em; height: auto; ">
+                </a>
+            </div>
 
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    	</div>
-  	</section>
+            <div class="col-sm d-flex justify-content-center align-items-center mb-5">
+                <a href="https://gdgranchi.in/" target="_blank">
+                    <img src="images/community/gdg-ranchi.png" alt="Avatar" style="width:13em; height: auto;  ">
+                </a>
+            </div>
 
-  </section>
-
-
-
-  <section class="hack" id="events">
-  
-  <div class=" text-center">
-    <br><br>
-        <h1 style="font-family: 'Bebas Neue'; text-align: center;" >Recent Events</h1>
-        <br><br>
-      </div>
-      
-      <div class="container ">
-        <div class="row">
-
-          <div class="col-md-3 d-flex align-items-stretch">
-            <div class="card">
-              <img src="images/bitcode.png" alt="Avatar" style="width:100%">
-
-              <div class="container">
-                <h5><b>BIT Code</b></h5>
-                <p>1. MONTHLY CP EVENTS- These contests will be organized keeping Coding Interviews and Placement Contests in mind.
-                  <br>
-2. Intro to ACM ICPC for BITians
-
-Join <a href="http://bit.ly/bitcodegroup"><strong>this</strong></a> group to stay updated with our upcoming coding events</p>
-              </div>
-            </div> 
-          </div>
-
-          <div class="col-md-3 d-flex align-items-stretch">
-            <div class="card">
-              <img src="images/tmc.jpeg" alt="Avatar" style="width:100%">
-
-              <div class="container">
-                <h5><b>The MOnsoon Coderr</b></h5>
-                
-              </div>
-            </div> 
-          </div>
-
-          <div class="col-md-3 d-flex align-items-stretch">
-            <div class="card">
-              <img src="images/codestorm.png" alt="Avatar" style="width:100%">
-
-              <div class="container">
-                <h5><b>CODESTORM 2.0</b></h5>
-                
-              </div>
-            </div> 
-          </div>
-
-
-          <div class="col-md-3 d-flex align-items-stretch">
-            <div class="card">
-              <img src="images/designatello.png" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h5><b>Designatello</b></h5>
-                <p>Redesign the Designed</p>
-                
-              </div>
-            </div> 
-          </div>
-
-          <div class="col-md-3 d-flex align-items-stretch">
-            <div class="card">
-              <img src="images/doty.png" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h5><b>Developer of the Year</b></h5>
-
-              </div>
-            </div> 
-          </div>
-
-
-          <div class="col-md-3 d-flex align-items-stretch">
-            <div class="card">
-              <img src="images/hackatron-poster.jpeg" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h5><b>Hackatron</b></h5>
-                <p>24 hour National Level Hackathon.</p>
-              </div>
-            </div> 
-          </div>
-
-
+            <div class="col-sm d-flex justify-content-center align-items-center mb-5">
+                <a href="https://www.meetup.com/awsugrnc/" target="_blank">
+                    <img src="images/community/aws-ranchi.jpg" alt="Avatar" style="width:8em; height: auto; ">
+                </a>
+            </div>
 
         </div>
-      </div>
+        <br>
 
-      <br>
+    </section>
 
-
-  <div class=" text-center">
-    <br><br>
-        <h1 style="font-family: 'Bebas Neue'; text-align: center;" >Intro and BootCamp Sessions</h1>
-        <br><br>
-      </div>
-      
-      <div class="container ">
-        <div class="row">
-
-          <div class="col-md-3 d-flex align-items-stretch">
-            <div class="card">
-              <img src="images/mlsession.jpg" alt="Avatar" style="width:100%;">
-              <div class="container">
-                <h5><b>ML Session: Beginner to Kaggle</b></h5>
-              </div>
-
-            </div> 
-          </div>
-
-          <div class="col-md-3 d-flex align-items-stretch">
-            <div class="card">
-              <img src="images/pythonforml.png" alt="Avatar" style="width:100%;">
-              <div class="container">
-                <h5><b>Intro to Python for Machine Learning</b></h5>
-                
-              </div>
-            </div> 
-          </div>
-
-
-          <div class="col-md-3 d-flex align-items-stretch">
-            <div class="card">
-              <img src="images/introtooops.png" alt="Avatar" style="width:100%;">
-              <div class="container">
-                <h5><b>OOPS for Android Development</b></h5>
-                
-              </div>
-            </div> 
-          </div>
-
-          <div class="col-md-3 d-flex align-items-stretch">
-            <div class="card">
-              <img src="images/hacktoberfest.png" alt="Avatar" style="width:100%;">
-              <div class="container">
-                <h5><b>Hacktoberfest:Intro to Git and GitHub</b></h5><p><a href="https://drive.google.com/open?id=1j6sd0g97uKG8CstMgifC9yidn1jDTKJV" target="_blank">Presentation links</a></p>
-
-              </div>
-            </div> 
-          </div>
-
-
-
+    <section class="sponsors" id="sponsors">
+        <div class=" text-center">
+            <br><br>
+            <h1 style="font-family: 'Bebas Neue';color:#232226">Our Sponsors</h1>
+            <br><br>
         </div>
-      </div>
+    </section>
 
-
-      <br><br><br>
-      
-</section>
-
-
-
- 
-  
-  
-
-      <!-- new section  -->
-
-  <section class="sponsors" id="sponsors">
-    <div class=" text-center">
-      <br><br>
-        <h1  style="font-family: 'Bebas Neue';color:#232226">Our Sponsors </h1>
-        <br><br>
-      </div>
-  </section>
-
-  <section class="sponsors">
+    <section class="sponsors">
         <div class="col-sm ">
-           <div class="row">
-
-              <div class="col-sm">
-                <div class="card text-center">
-
-                  <div class="container">
-                      <a href="https://www.teqip.in/" target="_blank">
-                      <img src="images/teqip.png" alt="Avatar" style="width:10em; height: auto; ">
-                    </a>
-                  </div>
-                </div> 
-              </div>
-            
-
-             
-              <div class="col-sm">
-                <div class="card text-center">
-
-                  <div class="container">
-                      <a href="https://www.educative.io/" target="_blank">
-                      <img src="images/educative.png" alt="Avatar" style="width:10em; height: auto;  ">
-                      </a>
-                  </div>
-                </div> 
-              </div>
-            
+            <div class="row">
 
 
-            
-              <div class="col-sm">
-                <div class="card text-center">
+                <div class="col-sm">
+                    <div class="card text-center">
 
-                  <div class="container">
-                      <a href="https://codingblocks.com/" target="_blank">
-                      <img src="images/codingblocks.png" alt="Avatar" style="width:10em; height: auto; ">
-                    </a>
-                  </div>
-                </div> 
-              </div>
+                        <div class="container">
+                            <a href="https://www.teqip.in/" target="_blank">
+                                <img src="images/teqip.png" alt="Avatar" style="width:10em; height: auto; ">
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-              <div class="col-sm">
-                <div class="card text-center">
+                <div class="col-sm">
+                    <div class="card text-center">
 
-                  <div class="container">
-                      <a href="https://www.creative-tim.com/" target="_blank">
-                      <img src="images/creative-tim.png" alt="Avatar" style="width:5.5em; height: auto;">
-                    </a>
-                    </a>
-                  </div>
-                </div> 
-              </div>
+                        <div class="container">
+                            <a href="https://www.educative.io/" target="_blank">
+                                <img src="images/educative.png" alt="Avatar" style="width:10em; height: auto;  ">
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-              <div class="col-sm">
-                <div class="card text-center">
+                <div class="col-sm">
+                    <div class="card text-center">
 
-                  <div class="container">
-                      <a href="https://rosenfeldmedia.com/" target="_blank">
-                      <img src="images/rosenfeld.png" alt="Avatar" style="width:13em; height: auto;  ">
-                      </a>
-                  </div>
-                </div> 
-              </div>
+                        <div class="container">
+                            <a href="https://codingblocks.com/" target="_blank">
+                                <img src="images/codingblocks.png" alt="Avatar" style="width:10em; height: auto; ">
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-              <div class="col-sm">
-                <div class="card text-center">
+                <div class="col-sm">
+                    <div class="card text-center">
 
-                  <div class="container">
-                      <a href="https://www.bugsee.com/" target="_blank">
-                      <img src="images/bugsee.png" alt="Avatar" style="width:5.5em; height: auto;">
-                    </a>                      
-                    </a>
-                  </div>
-                </div> 
-              </div>
-            
-            
+                        <div class="container">
+                            <a href="https://www.creative-tim.com/" target="_blank">
+                                <img src="images/creative-tim.png" alt="Avatar" style="width:5.5em; height: auto;">
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card text-center">
+
+                        <div class="container">
+                            <a href="https://rosenfeldmedia.com/" target="_blank">
+                                <img src="images/rosenfeld.png" alt="Avatar" style="width:13em; height: auto;  ">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card text-center">
+
+                        <div class="container">
+                            <a href="https://www.bugsee.com/" target="_blank">
+                                <img src="images/bugsee.png" alt="Avatar" style="width:5.5em; height: auto;">
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-          </div>
-            <br><br><br><br><br><br>
-        
+        </div>
+        <br><br><br><br><br><br>
+
     </section>
-  </section>
 
 
-	<!-------footer section--------->
-	<div class="sec" id="footer">
-	<footer class="main_footer">
+    <!-------footer section--------->
+    <div class="sec" id="footer">
+        <footer class="main_footer">
 
-		<h5 style="text-align: center;"><i class="far fa-copyright"></i> HnCC, BIT Sindri </h5><br>
+            <h5 style="text-align: center;"><i class="far fa-copyright"></i> HnCC, BIT Sindri </h5><br>
 
-		<h5 style="text-align: center;font-family: 'Bebas Neue'; letter-spacing: .1em; font-size: 1.5em;">Crafted with <i class="fas fa-heart"></i> by HnCC Team.</h5>
+            <h5 style="text-align: center;font-family: 'Bebas Neue'; letter-spacing: .1em; font-size: 1.5em;">
+                Crafted with <i class="fas fa-heart"></i> by HnCC Team.
+            </h5>
 
-		<div class="container">
-			<div class="row">
+            <div class="container">
+                <div class="row">
 
-     
-				<div class="col-md-24 col-lg-12 footer_block">
-          <br>
-						<h3 class="footer_block_title"></h3>
-			
+                    <div class="col-md-24 col-lg-12 footer_block">
+                        <br>
+                        <h3 class="footer_block_title"></h3>
 
-			<h1><a href="https://goo.gl/maps/qeEcQMWBvRuAgUNJ6"><i class="fas fa-map-marked-alt"></i></a></h1>
+                        <h1><a href="https://goo.gl/maps/qeEcQMWBvRuAgUNJ6"><i class="fas fa-map-marked-alt"></i></a>
+                        </h1>
 
-            <h2>
-              <a href="mailto:hnccbits@gmail.com">hnccbits@gmail.com</a> </h2>
-				</div>
-        
+                        <h2>
+                            <a href="mailto:hnccbits@gmail.com">hnccbits@gmail.com</a>
+                        </h2>
+                    </div>
 
-  </footer>
-	</div>     
+                </div>
+            </div>
 
-
-
-		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		<script src="resources/js/scripts.js"></script>
-		
-
-	<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5d5fdf6eeb1a6b0be609046a/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+        </footer>
+    </div>
 
 
 
-	</body>	
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="resources/js/scripts.js"></script>
+
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5d5fdf6eeb1a6b0be609046a/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+
+</body>
+
 </html>
