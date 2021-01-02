@@ -953,8 +953,8 @@ footer a:hover {
   position: absolute;
   top: -2rem;
   left: 0;
-  height: 75vh;
-  width: 35vw;
+  height: 85%;
+  width: 35%;
 }
 
 .left__box-img {
@@ -966,8 +966,8 @@ footer a:hover {
   position: absolute;
   top: -2rem;
   right: 0;
-  height: 83vh;
-  width: 40vw;
+  height: 94%;
+  width: 40%;
 }
 
 .right__box-img {
