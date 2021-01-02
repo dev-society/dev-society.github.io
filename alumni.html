@@ -1,469 +1,661 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
 
-<head>
+    <link rel="stylesheet" type="text/css" href="resources/css/styles.css" />
 
-    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue|Raleway:300,400&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="external/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Raleway:300,400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="external/css/all.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/ico" href="favicon.ico" />
     <title>HnCC, BIT Sindri</title>
 
     <style>
-        a:hover {
-            text-decoration: none;
-        }
+      a:hover {
+        text-decoration: none;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <div id="preloader">
-        <img src="preloader.gif"
-            style="width: auto; height: 80vh; background: #fff no-repeat center center; margin-left: auto; margin: auto; text-align: center; display: block;">
+      <img
+        src="preloader.gif"
+        style="
+          width: auto;
+          height: 80vh;
+          background: #fff no-repeat center center;
+          margin-left: auto;
+          margin: auto;
+          text-align: center;
+          display: block;
+        "
+      />
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="hero-nav">
-        <div class="logo">
-            <a class="navbar-brand" style="color:#fffffb;" href="https://dev-society.github.io">
-                <img style="width:2.7em; height:auto;" src="images/hncc-logo.png" alt="Developer's Society">
-            </a>
-        </div>
+      <div class="logo">
+        <a
+          class="navbar-brand"
+          style="color: #fffffb"
+          href="https://dev-society.github.io"
+        >
+          <img
+            style="width: 2.7em; height: auto"
+            src="images/hncc-logo.png"
+            alt="Developer's Society"
+          />
+        </a>
+      </div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto text-center">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-center">
+          <a
+            class="nav-link"
+            style="
+              font-family: 'Bebas Neue';
+              letter-spacing: 0.05em;
+              font-size: 1.2em;
+              margin-right: 1.3em;
+            "
+            href="index.html#about-us"
+            >About Us</a
+          >
 
-                <a class="nav-link "
-                    style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em; "
-                    href="index.html#about-us">About Us</a>
+          <a
+            class="nav-link"
+            style="
+              font-family: 'Bebas Neue';
+              letter-spacing: 0.05em;
+              font-size: 1.2em;
+              margin-right: 1.3em;
+            "
+            href="index.html#stats"
+            >Stats</a
+          >
 
-                <a class="nav-link "
-                    style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em;"
-                    href="index.html#stats">Stats</a>
+          <a
+            class="nav-link"
+            style="
+              font-family: 'Bebas Neue';
+              letter-spacing: 0.05em;
+              font-size: 1.2em;
+              margin-right: 1.3em;
+            "
+            href="index.html#events"
+            >Events</a
+          >
 
-                <a class="nav-link "
-                    style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em;"
-                    href="index.html#events">Events</a>
+          <a
+            class="nav-link"
+            style="
+              font-family: 'Bebas Neue';
+              letter-spacing: 0.05em;
+              font-size: 1.2em;
+              margin-right: 1.3em;
+            "
+            href="#"
+            >Team</a
+          >
 
-                <a class="nav-link "
-                    style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em;"
-                    href="#">Team</a>
+          <a
+            class="nav-link"
+            style="
+              font-family: 'Bebas Neue';
+              letter-spacing: 0.05em;
+              font-size: 1.2em;
+              margin-right: 1.3em;
+            "
+            href="https://blog.hnccbits.com"
+            >Blog</a
+          >
 
-                <a class="nav-link "
-                    style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em;"
-                    href="https://blog.hnccbits.com">Blog</a>
-
-                <a class="nav-link "
-                    style="font-family: 'Bebas Neue'; letter-spacing: .05em; font-size: 1.2em; margin-right: 1.3em;"
-                    href="#footer">Contact Us</a>
-
-            </ul>
-
-        </div>
+          <a
+            class="nav-link"
+            style="
+              font-family: 'Bebas Neue';
+              letter-spacing: 0.05em;
+              font-size: 1.2em;
+              margin-right: 1.3em;
+            "
+            href="#footer"
+            >Contact Us</a
+          >
+        </ul>
+      </div>
     </nav>
 
     <!-- Floating Social Media bar Starts -->
     <div class="float-sm">
-        <div class="fl-fl float-tw">
-            <i class="fab fa-facebook-f"></i>
-            <a href="https://www.facebook.com/hnccbits/" target="_blank">&nbsp &nbsp Like us on fb</a>
-        </div>
-        <div class="fl-fl float-gp">
-            <i class="fab fa-github"></i>
-            <a href="https://www.github.com/hnccbits" target="_blank">&nbsp &nbsp Check our Projects</a>
-        </div>
-        <div class="fl-fl float-rs">
-            <i class="fab fa-linkedin-in"></i>
-            <a href="https://www.linkedin.com/company/hnccbits" target="_blank">&nbsp &nbsp Follow us on linkedin</a>
-        </div>
-        <div class="fl-fl float-ig">
-            <i class="fab fa-instagram"></i>
-            <a href="https://www.instagram.com/hnccbits" target="_blank">&nbsp &nbsp Follow us on insta!</a>
-        </div>
+      <div class="fl-fl float-tw">
+        <i class="fab fa-facebook-f"></i>
+        <a href="https://www.facebook.com/hnccbits/" target="_blank"
+          >&nbsp &nbsp Like us on fb</a
+        >
+      </div>
+      <div class="fl-fl float-gp">
+        <i class="fab fa-github"></i>
+        <a href="https://www.github.com/hnccbits" target="_blank"
+          >&nbsp &nbsp Check our Projects</a
+        >
+      </div>
+      <div class="fl-fl float-rs">
+        <i class="fab fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/company/hnccbits" target="_blank"
+          >&nbsp &nbsp Follow us on linkedin</a
+        >
+      </div>
+      <div class="fl-fl float-ig">
+        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/hnccbits" target="_blank"
+          >&nbsp &nbsp Follow us on insta!</a
+        >
+      </div>
     </div>
     <!-- Floating Social Media bar Ends -->
 
-
     <section class="team-header">
-
-        <h2 style="text-align: center;font-family: 'Bebas Neue'; letter-spacing: .1em; font-size: 2.5em;">
-            Our AMAZING Team
-        </h2>
-        <br>
-        <h3>
-            <i class="fas fa-quote-left"></i>"Alone we can do so little, together we can do so much." <br>-Helen
-            Keller
-        </h3>
-
+      <h2
+        style="
+          text-align: center;
+          font-family: 'Bebas Neue';
+          letter-spacing: 0.1em;
+          font-size: 2.5em;
+        "
+      >
+        Our AMAZING Team
+      </h2>
+      <br />
+      <h3>
+        <i class="fas fa-quote-left"></i>"Alone we can do so little, together we
+        can do so much." <br />-Helen Keller
+      </h3>
     </section>
 
     <!-- Section: Team v.1 -->
     <section class="team-section text-center my-5">
+      <!-- Section description -->
+      <h2
+        style="
+          text-align: center;
+          font-family: 'Bebas Neue';
+          letter-spacing: 0.04em;
+          font-size: 2em;
+        "
+      >
+        Founding Members
+      </h2>
+      <br />
 
-        <!-- Section description -->
-        <h2 style="text-align: center;font-family: 'Bebas Neue'; letter-spacing: .04em; font-size: 2em;">
-            Founding Members
-        </h2>
-        <br>
+      <div class="container founders">
+        <div class="row">
+          <div class="col-xs col-sm d-flex align-items-stretch">
+            <div class="card">
+              <img src="images/team/2k16/neeraj-2k16.png" alt="Avatar" />
+              <div class="container">
+                <h5><b>Kumar Neeraj</b></h5>
 
-        <div class="container founders ">
-            <div class="row ">
+                <h3>
+                  <a href="mailto:neerajistheboss@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/kumar-neeraj-077b36177/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/Neerajistheboss" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/kumar.neeraj.7906"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </h3>
 
-                <div class="col-xs col-sm d-flex align-items-stretch">
-                    <div class="card">
-                        <img src="images/team/2k16/neeraj-2k16.png" alt="Avatar">
-                        <div class="container">
-                            <h5><b>Kumar Neeraj</b></h5>
-
-                            <h3>
-                                <a href="mailto:neerajistheboss@gmail.com" target="_blank">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/kumar-neeraj-077b36177/" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="https://github.com/Neerajistheboss" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.facebook.com/kumar.neeraj.7906" target="_blank">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </h3>
-
-                            <p>Civil 2k16<br><b>President</b></p>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xs col-sm d-flex align-items-stretch">
-                    <div class="card">
-                        <img src="images/team/2k16/sourav-2k16.png" alt="Avatar">
-                        <div class="container">
-                            <h5><b>Sourav Paul</b></h5>
-
-                            <h3>
-                                <a href="mailto:souravpaul@protonmail.com" target="_blank">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/souravpaul8" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="https://github.com/souravpaul8" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://m.facebook.com/souravpaul9835" target="_blank"><i
-                                        class="fab fa-facebook"></i>
-                                </a>
-                            </h3>
-
-                            <p>EE 2k16<br><b>Vice President</b></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs col-sm d-flex align-items-stretch">
-                    <div class="card">
-                        <img src="images/team/2k16/snehal-2k16.png" alt="Avatar">
-                        <div class="container">
-                            <h5><b>Snehal Singh</b></h5>
-
-                            <h3>
-                                <a href="mailto:snehal2398@gmail.com" target="_blank">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/snehal-singh-2051889b" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="https://github.com/snehal2398" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.instagram.com/snehals2398/" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </h3>
-
-                            <p>ECE 2k16<br><b>Treasurer</b></p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs col-sm d-flex align-items-stretch">
-                    <div class="card text-center">
-                        <img src="images/team/2k16/bhuwan-2k16.png" alt="Avatar">
-                        <div class="container">
-                            <h5><b>Bhuwan Mahto</b></h5>
-
-                            <h3>
-                                <a href="mailto:bhuwan8501@gmail.com" target="_blank">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/bhuwan-mahato-a46579146" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="https://www.instagram.com/bhu___1/" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </h3>
-
-                            <p>ECE 2k16<br><b>Secretary</b></p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs col-sm d-flex align-items-stretch">
-                    <div class="card text-center">
-                        <img src="images/team/2k16/raj-2k16.png" alt="Avatar">
-                        <div class="container">
-                            <h5><b>Raj Sinha</b></h5>
-
-                            <h3>
-                                <a href="mailto:kumarankit01scientific@gmail.com" target="_blank">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/raj-sinha-bit" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="https://www.instagram.com/the_krankit/" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </h3>
-
-                            <p>IT 2k16<br><b>Event Manager & Technical Head</b></p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs col-sm d-flex align-items-stretch">
-                    <div class="card text-center">
-                        <img src="images/team/2k16/krankit-2k16.png" alt="Avatar">
-                        <div class="container">
-                            <h5><b>Kumar Ankit</b></h5>
-
-                            <h3>
-                                <a href="mailto:rajsinha.bit@gmail.com" target="_blank">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/kumar-ankit-11800685" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a class="info" href="https://www.facebook.com/profile.php?id=100012907384238"
-                                    target="_blank">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </h3>
-
-                            <p>Civil 2k16<br><b>Vice President</b></p>
-
-                        </div>
-                    </div>
-                </div>
-
+                <p>Civil 2k16<br /><b>President</b></p>
+              </div>
             </div>
-        </div>
-        <br><br>
+          </div>
 
-        <h2 style="text-align: center;font-family: 'Bebas Neue'; letter-spacing: .04em; font-size: 2em;">
-            Post Bearers
-        </h2>
-        <br>
+          <div class="col-xs col-sm d-flex align-items-stretch">
+            <div class="card">
+              <img src="images/team/2k16/sourav-2k16.png" alt="Avatar" />
+              <div class="container">
+                <h5><b>Sourav Paul</b></h5>
 
-        <div class="container post-bearers">
+                <h3>
+                  <a href="mailto:souravpaul@protonmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/souravpaul8"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/souravpaul8" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://m.facebook.com/souravpaul9835"
+                    target="_blank"
+                    ><i class="fab fa-facebook"></i>
+                  </a>
+                </h3>
 
-            <div class="card-columns">
-
-                <div class="card">
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="images/team/2k16/raj-2k16.jpg" alt="avatar">
-                        <div class="overlay">
-                            <h2><b>Raj Sinha</b></h2>
-                            <br><br><br><br><br>
-
-                            <a href="rajsinha.bit@gmail.com" class="info" target="_blank">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a class="info" href="https://www.linkedin.com/in/raj-sinha-bit" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a class="info" href="https://github.com/RajSinha77" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a class="info" href="https://www.facebook.com/profile.php?id=100012907384238"
-                                target="_blank">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <br>
-                            <h5><b>Event Manager & Technical Head</b><br>IT 2k16</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="images/team/2k16/ankit-2k16.jpeg" alt="avatar">
-                        <div class="overlay">
-                            <h2><b>Ankit Kumar</b></h2>
-                            <br><br>
-
-                            <a href="mailto:ankitkr602@gmail.com" class="info" target="_blank">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a class="info" href="https://www.linkedin.com/in/ankitkr602/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a class="info" href="" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a class="info" href="https://www.instagram.com/kumar.ankit602/" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <br>
-
-                            <h5><b>Technical Head & Event Manager</b><br>IT 2k16</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="images/team/2k16/satyam-2k16.jpg" alt="avatar">
-                        <div class="overlay">
-                            <h2><b>Satyam Ramani</b></h2><br><br>
-
-                            <a href="mailto:satyamramani58554@gmail.com" class="info" target="_blank">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a class="info" href="https://www.linkedin.com/in/satyam-ramani-8231b7182" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a class="info" href="https://github.com/satyamramani" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a class="info" href="https://m.facebook.com/satyam.ramani.14" target="_blank">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <br>
-                            <h5><b>Public Relations Chief</b><br>EE 2k16</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="images/team/2k16/hitesh-2k16.jpg" alt="avatar">
-                        <div class="overlay">
-                            <h2><b>Hitesh Kumar Chandra</b></h2><br><br><br><br><br>
-
-
-                            <a href="mailto:chandrahitesh9@gmail.com" class="info" target="_blank">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a class="info" href="https://www.linkedin.com/in/hitesh-chandra-73937b145" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a class="info" href="" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a class="info" href="https://www.facebook.com/hitesh-chandra" target="_blank">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <br>
-                            <h5><b>Joint Secretary</b><br>ECE 2k16</h5>
-                        </div>
-                    </div>
-                </div>
-
+                <p>EE 2k16<br /><b>Vice President</b></p>
+              </div>
             </div>
+          </div>
 
+          <div class="col-xs col-sm d-flex align-items-stretch">
+            <div class="card">
+              <img src="images/team/2k16/snehal-2k16.png" alt="Avatar" />
+              <div class="container">
+                <h5><b>Snehal Singh</b></h5>
+
+                <h3>
+                  <a href="mailto:snehal2398@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/snehal-singh-2051889b"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/snehal2398" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/snehals2398/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </h3>
+
+                <p>ECE 2k16<br /><b>Treasurer</b></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs col-sm d-flex align-items-stretch">
+            <div class="card text-center">
+              <img src="images/team/2k16/bhuwan-2k16.png" alt="Avatar" />
+              <div class="container">
+                <h5><b>Bhuwan Mahto</b></h5>
+
+                <h3>
+                  <a href="mailto:bhuwan8501@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/bhuwan-mahato-a46579146"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://www.instagram.com/bhu___1/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </h3>
+
+                <p>ECE 2k16<br /><b>Secretary</b></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs col-sm d-flex align-items-stretch">
+            <div class="card text-center">
+              <img src="images/team/2k16/raj-2k16.png" alt="Avatar" />
+              <div class="container">
+                <h5><b>Raj Sinha</b></h5>
+
+                <h3>
+                  <a
+                    href="mailto:kumarankit01scientific@gmail.com"
+                    target="_blank"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/raj-sinha-bit"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/the_krankit/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </h3>
+
+                <p>IT 2k16<br /><b>Event Manager & Technical Head</b></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs col-sm d-flex align-items-stretch">
+            <div class="card text-center">
+              <img src="images/team/2k16/krankit-2k16.png" alt="Avatar" />
+              <div class="container">
+                <h5><b>Kumar Ankit</b></h5>
+
+                <h3>
+                  <a href="mailto:rajsinha.bit@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/kumar-ankit-11800685"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    class="info"
+                    href="https://www.facebook.com/profile.php?id=100012907384238"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </h3>
+
+                <p>Civil 2k16<br /><b>Vice President</b></p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <br /><br />
 
+      <h2
+        style="
+          text-align: center;
+          font-family: 'Bebas Neue';
+          letter-spacing: 0.04em;
+          font-size: 2em;
+        "
+      >
+        Post Bearers
+      </h2>
+      <br />
+
+      <div class="container post-bearers">
+        <div class="card-columns">
+          <div class="card">
+            <div class="hovereffect">
+              <img
+                class="img-responsive"
+                src="images/team/2k16/raj-2k16.jpg"
+                alt="avatar"
+              />
+              <div class="overlay">
+                <h2><b>Raj Sinha</b></h2>
+                <br /><br /><br /><br /><br />
+
+                <a href="rajsinha.bit@gmail.com" class="info" target="_blank">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a
+                  class="info"
+                  href="https://www.linkedin.com/in/raj-sinha-bit"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  class="info"
+                  href="https://github.com/RajSinha77"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  class="info"
+                  href="https://www.facebook.com/profile.php?id=100012907384238"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <br />
+                <h5><b>Event Manager & Technical Head</b><br />IT 2k16</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="hovereffect">
+              <img
+                class="img-responsive"
+                src="images/team/2k16/ankit-2k16.jpeg"
+                alt="avatar"
+              />
+              <div class="overlay">
+                <h2><b>Ankit Kumar</b></h2>
+                <br /><br />
+
+                <a
+                  href="mailto:ankitkr602@gmail.com"
+                  class="info"
+                  target="_blank"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a
+                  class="info"
+                  href="https://www.linkedin.com/in/ankitkr602/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a class="info" href="" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  class="info"
+                  href="https://www.instagram.com/kumar.ankit602/"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <br />
+
+                <h5><b>Technical Head & Event Manager</b><br />IT 2k16</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="hovereffect">
+              <img
+                class="img-responsive"
+                src="images/team/2k16/satyam-2k16.jpg"
+                alt="avatar"
+              />
+              <div class="overlay">
+                <h2><b>Satyam Ramani</b></h2>
+                <br /><br />
+
+                <a
+                  href="mailto:satyamramani58554@gmail.com"
+                  class="info"
+                  target="_blank"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a
+                  class="info"
+                  href="https://www.linkedin.com/in/satyam-ramani-8231b7182"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  class="info"
+                  href="https://github.com/satyamramani"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  class="info"
+                  href="https://m.facebook.com/satyam.ramani.14"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <br />
+                <h5><b>Public Relations Chief</b><br />EE 2k16</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="hovereffect">
+              <img
+                class="img-responsive"
+                src="images/team/2k16/hitesh-2k16.jpg"
+                alt="avatar"
+              />
+              <div class="overlay">
+                <h2><b>Hitesh Kumar Chandra</b></h2>
+                <br /><br /><br /><br /><br />
+
+                <a
+                  href="mailto:chandrahitesh9@gmail.com"
+                  class="info"
+                  target="_blank"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a
+                  class="info"
+                  href="https://www.linkedin.com/in/hitesh-chandra-73937b145"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a class="info" href="" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  class="info"
+                  href="https://www.facebook.com/hitesh-chandra"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <br />
+                <h5><b>Joint Secretary</b><br />ECE 2k16</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Section: Team v.1 -->
 
-
     <!-------footer section--------->
     <div class="sec" id="footer">
-        <footer class="main_footer">
+      <footer class="main_footer">
+        <h5 style="text-align: center">
+          <i class="far fa-copyright"></i> HnCC, BIT Sindri
+        </h5>
+        <br />
 
-            <h5 style="text-align: center;"><i class="far fa-copyright"></i> HnCC, BIT Sindri </h5><br>
+        <h5
+          style="
+            text-align: center;
+            font-family: 'Bebas Neue';
+            letter-spacing: 0.1em;
+            font-size: 1.5em;
+          "
+        >
+          Crafted with <i class="fas fa-heart"></i> by HnCC Team.
+        </h5>
 
-            <h5 style="text-align: center;font-family: 'Bebas Neue'; letter-spacing: .1em; font-size: 1.5em;">
-                Crafted with <i class="fas fa-heart"></i> by HnCC Team.
-            </h5>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-24 col-lg-12 footer_block">
+              <br />
+              <h3 class="footer_block_title"></h3>
 
-            <div class="container">
-                <div class="row">
+              <h1>
+                <a href="https://goo.gl/maps/qeEcQMWBvRuAgUNJ6">
+                  <i class="fas fa-map-marked-alt"></i>
+                </a>
+              </h1>
 
-                    <div class="col-md-24 col-lg-12 footer_block">
-                        <br>
-                        <h3 class="footer_block_title"></h3>
-
-
-                        <h1>
-                            <a href="https://goo.gl/maps/qeEcQMWBvRuAgUNJ6">
-                                <i class="fas fa-map-marked-alt"></i>
-                            </a>
-                        </h1>
-
-                        <h2>
-                            <a href="mailto:hnccbits@gmail.com">hnccbits@gmail.com</a>
-                        </h2>
-                    </div>
-
-                </div>
+              <h2>
+                <a href="mailto:hnccbits@gmail.com">hnccbits@gmail.com</a>
+              </h2>
             </div>
-
-        </footer>
+          </div>
+        </div>
+      </footer>
     </div>
 
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <script src="resources/js/scripts.js"></script>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-            Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/5d5fdf6eeb1a6b0be609046a/default';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement('script'),
+          s0 = document.getElementsByTagName('script')[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5d5fdf6eeb1a6b0be609046a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
     </script>
     <!--End of Tawk.to Script-->
-
-
-
-</body>
-
+  </body>
 </html>
