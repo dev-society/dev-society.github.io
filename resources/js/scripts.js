@@ -1,7 +1,6 @@
 // Code for removing website vulnerability
-for (var i = 0; i < $("a").length; i++) {
-	if ($("a")[i].target === "_blank")
-		$("a")[i].rel = "noopener noreferrer";
+for (var i = 0; i < $('a').length; i++) {
+	if ($('a')[i].target === '_blank') $('a')[i].rel = 'noopener noreferrer';
 }
 
 var loader;
@@ -21,7 +20,7 @@ function displayContent() {
 	loader.style.display = 'none';
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
 	loader = document.getElementById('preloader');
 	loadNow(1);
 });
@@ -29,13 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
 setTimeout(loadNow, 20 * 1000);
 
-
-
-
 $(document).ready(function () {
-
-
-
 	var TxtType = function (el, toRotate, period) {
 		this.toRotate = toRotate;
 		this.el = el;
@@ -89,23 +82,15 @@ $(document).ready(function () {
 			}
 		}
 		// INJECT CSS
-		var css = document.createElement("style");
-		css.type = "text/css";
-		css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+		var css = document.createElement('style');
+		css.type = 'text/css';
+		css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #fff}';
 		document.body.appendChild(css);
 	};
-
-
-
-
-
-
-
 
 	var a = 0;
 
 	$(window).scroll(function () {
-
 		if ($(window).scrollTop() > 200) {
 			$('nav').removeClass('nav a');
 			$('nav').addClass('sticky-nav');
@@ -113,84 +98,61 @@ $(document).ready(function () {
 			$('nav').removeClass('sticky-nav');
 		}
 
-		var ctx = document.getElementById("branchChart");
+		var ctx = document.getElementById('branchChart');
 		var branchChart = new Chart(ctx, {
 			type: 'pie',
 			data: {
 				labels: ['CSE/IT Undergrads', 'Non CSE/IT'],
-				datasets: [{
-					label: '# of Tomatoes',
-					data: [20, 32],
-					backgroundColor: [
-						'#121212',
-						'#CDDC39'
-					],
-					borderColor: [
-						'#121212',
-						'#CDDC39'
-					],
-					borderWidth: 1
-				}]
+				datasets: [
+					{
+						label: '# of Tomatoes',
+						data: [20, 32],
+						backgroundColor: ['#121212', '#CDDC39'],
+						borderColor: ['#121212', '#CDDC39'],
+						borderWidth: 1,
+					},
+				],
 			},
 			options: {
 				cutoutPercentage: 40,
-				responsive: true
-
-			}
+				responsive: true,
+			},
 		});
 
-
-		var ctx = document.getElementById("distChart");
+		var ctx = document.getElementById('distChart');
 		var distChart = new Chart(ctx, {
 			type: 'pie',
 			data: {
 				labels: ['Developers', 'Designers', '2D/3D Artists'],
-				datasets: [{
-					label: '# of Tomatoes',
-					data: [46, 5, 7],
-					backgroundColor: [
-						'#f44336',
-						'#CDDC39',
-						'#121212'
-					],
-					borderColor: [
-						'#f44336',
-						'#CDDC39',
-						'#121212'
-					],
-					borderWidth: 1
-				}]
+				datasets: [
+					{
+						label: '# of Tomatoes',
+						data: [46, 5, 7],
+						backgroundColor: ['#f44336', '#CDDC39', '#121212'],
+						borderColor: ['#f44336', '#CDDC39', '#121212'],
+						borderWidth: 1,
+					},
+				],
 			},
 			options: {
 				cutoutPercentage: 40,
-				responsive: true
-
-			}
+				responsive: true,
+			},
 		});
-
-
-
-
 	});
 
 	$('.counter').counterUp({
 		delay: 10,
-		time: 2000
+		time: 2000,
 	});
 	$('.counter').addClass('animated fadeInDownBig');
-
-
 
 	$('.js-nav-icon').click(function () {
 		var nav = $('.js-main-nav');
 
 		var icon_class = $('.js-nav-icon i');
 
-
 		nav.slideToggle(300);
-
-
-
 	});
 
 	var oTop = $('#counter').offset().top - window.innerHeight;
@@ -199,13 +161,13 @@ $(document).ready(function () {
 			var $this = $(this),
 				countTo = $this.attr('data-count');
 			$({
-				countNum: $this.text()
-			}).animate({
-					countNum: countTo
+				countNum: $this.text(),
+			}).animate(
+				{
+					countNum: countTo,
 				},
 
 				{
-
 					duration: 2000,
 					easing: 'swing',
 					step: function () {
@@ -213,59 +175,40 @@ $(document).ready(function () {
 					},
 					complete: function () {
 						$this.text(this.countNum);
-					}
-
-				});
+					},
+				}
+			);
 		});
 		a = 1;
 	}
 
-
-
-	var graphicsdev = $("#graphicsdev");
-	var gamedev = $("#gamedev");
-	var webdev = $("#webdev");
+	var graphicsdev = $('#graphicsdev');
+	var gamedev = $('#gamedev');
+	var webdev = $('#webdev');
 
 	gamedev.hide();
 	webdev.hide();
 
-	$("#graphicsDevBtn").click(function () {
+	$('#graphicsDevBtn').click(function () {
 		graphicsdev.show(800);
 
 		gamedev.hide();
 		webdev.hide();
 	});
 
-
-	$("#gameDevBtn").click(function () {
+	$('#gameDevBtn').click(function () {
 		gamedev.show(800);
 
 		graphicsdev.hide();
 		webdev.hide();
-
-
 	});
 
-	$("#webDBtn").click(function () {
+	$('#webDBtn').click(function () {
 		webdev.show(800);
 		gamedev.hide();
 		graphicsdev.hide();
-
 	});
-
-
-
-
-
-
-
-
-
-
 });
-
-
-
 
 jQuery(window).scroll(startCounter);
 
@@ -274,156 +217,153 @@ function startCounter() {
 		hH = jQuery('#stats').outerHeight(),
 		wH = jQuery(window).height();
 	if (jQuery(window).scrollTop() > hT + hH - wH) {
-		jQuery(window).off("scroll", startCounter);
+		jQuery(window).off('scroll', startCounter);
 		jQuery('.counter').each(function () {
 			var $this = jQuery(this);
 			jQuery({
-				Counter: 0
-			}).animate({
-				Counter: $this.text()
-			}, {
-				duration: 2000,
-				easing: 'swing',
-				step: function () {
-					$this.text(Math.ceil(this.Counter) + '%');
+				Counter: 0,
+			}).animate(
+				{
+					Counter: $this.text(),
+				},
+				{
+					duration: 2000,
+					easing: 'swing',
+					step: function () {
+						$this.text(Math.ceil(this.Counter) + '%');
+					},
 				}
-			});
+			);
 		});
 	}
 }
 
+// /*------------- ParticleJS-------------*/
 
-
-
-
-
-
-/*------------- ParticleJS-------------*/
-
-particlesJS("particles-js", {
-	"particles": {
-		"number": {
-			"value": 137,
-			"density": {
-				"enable": true,
-				"value_area": 1050.8590120982064
-			}
-		},
-		"color": {
-			"value": "#fff"
-		},
-		"shape": {
-			"type": "circle",
-			"stroke": {
-				"width": 0,
-				"color": "#000000"
-			},
-			"polygon": {
-				"nb_sides": 5
-			},
-			"image": {
-				"src": "img/github.svg",
-				"width": 100,
-				"height": 100
-			}
-		},
-		"opacity": {
-			"value": 0.5,
-			"random": true,
-			"anim": {
-				"enable": false,
-				"speed": 1,
-				"opacity_min": 0.1,
-				"sync": false
-			}
-		},
-		"size": {
-			"value": 10,
-			"random": true,
-			"anim": {
-				"enable": false,
-				"speed": 40,
-				"size_min": 0.1,
-				"sync": false
-			}
-		},
-		"line_linked": {
-			"enable": false,
-			"distance": 500,
-			"color": "#ffffff",
-			"opacity": 0.4,
-			"width": 2
-		},
-		"move": {
-			"enable": true,
-			"speed": 1.5,
-			"direction": "bottom",
-			"random": false,
-			"straight": false,
-			"out_mode": "out",
-			"bounce": false,
-			"attract": {
-				"enable": false,
-				"rotateX": 600,
-				"rotateY": 1578.3700172831523
-			}
-		}
-	},
-	"interactivity": {
-		"detect_on": "canvas",
-		"events": {
-			"onhover": {
-				"enable": true,
-				"mode": "bubble"
-			},
-			"onclick": {
-				"enable": true,
-				"mode": "repulse"
-			},
-			"resize": true
-		},
-		"modes": {
-			"grab": {
-				"distance": 400,
-				"line_linked": {
-					"opacity": 0.5
-				}
-			},
-			"bubble": {
-				"distance": 400,
-				"size": 4,
-				"duration": 0.3,
-				"opacity": 1,
-				"speed": 3
-			},
-			"repulse": {
-				"distance": 200,
-				"duration": 0.4
-			},
-			"push": {
-				"particles_nb": 4
-			},
-			"remove": {
-				"particles_nb": 2
-			}
-		}
-	},
-	"retina_detect": true
-});
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function () {
-	stats.begin();
-	stats.end();
-	if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-		count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-	}
-	requestAnimationFrame(update);
-};
-requestAnimationFrame(update);;
+// particlesJS("particles-js", {
+// 	"particles": {
+// 		"number": {
+// 			"value": 137,
+// 			"density": {
+// 				"enable": true,
+// 				"value_area": 1050.8590120982064
+// 			}
+// 		},
+// 		"color": {
+// 			"value": "#fff"
+// 		},
+// 		"shape": {
+// 			"type": "circle",
+// 			"stroke": {
+// 				"width": 0,
+// 				"color": "#000000"
+// 			},
+// 			"polygon": {
+// 				"nb_sides": 5
+// 			},
+// 			"image": {
+// 				"src": "img/github.svg",
+// 				"width": 100,
+// 				"height": 100
+// 			}
+// 		},
+// 		"opacity": {
+// 			"value": 0.5,
+// 			"random": true,
+// 			"anim": {
+// 				"enable": false,
+// 				"speed": 1,
+// 				"opacity_min": 0.1,
+// 				"sync": false
+// 			}
+// 		},
+// 		"size": {
+// 			"value": 10,
+// 			"random": true,
+// 			"anim": {
+// 				"enable": false,
+// 				"speed": 40,
+// 				"size_min": 0.1,
+// 				"sync": false
+// 			}
+// 		},
+// 		"line_linked": {
+// 			"enable": false,
+// 			"distance": 500,
+// 			"color": "#ffffff",
+// 			"opacity": 0.4,
+// 			"width": 2
+// 		},
+// 		"move": {
+// 			"enable": true,
+// 			"speed": 1.5,
+// 			"direction": "bottom",
+// 			"random": false,
+// 			"straight": false,
+// 			"out_mode": "out",
+// 			"bounce": false,
+// 			"attract": {
+// 				"enable": false,
+// 				"rotateX": 600,
+// 				"rotateY": 1578.3700172831523
+// 			}
+// 		}
+// 	},
+// 	"interactivity": {
+// 		"detect_on": "canvas",
+// 		"events": {
+// 			"onhover": {
+// 				"enable": true,
+// 				"mode": "bubble"
+// 			},
+// 			"onclick": {
+// 				"enable": true,
+// 				"mode": "repulse"
+// 			},
+// 			"resize": true
+// 		},
+// 		"modes": {
+// 			"grab": {
+// 				"distance": 400,
+// 				"line_linked": {
+// 					"opacity": 0.5
+// 				}
+// 			},
+// 			"bubble": {
+// 				"distance": 400,
+// 				"size": 4,
+// 				"duration": 0.3,
+// 				"opacity": 1,
+// 				"speed": 3
+// 			},
+// 			"repulse": {
+// 				"distance": 200,
+// 				"duration": 0.4
+// 			},
+// 			"push": {
+// 				"particles_nb": 4
+// 			},
+// 			"remove": {
+// 				"particles_nb": 2
+// 			}
+// 		}
+// 	},
+// 	"retina_detect": true
+// });
+// var count_particles, stats, update;
+// stats = new Stats;
+// stats.setMode(0);
+// stats.domElement.style.position = 'absolute';
+// stats.domElement.style.left = '0px';
+// stats.domElement.style.top = '0px';
+// document.body.appendChild(stats.domElement);
+// count_particles = document.querySelector('.js-count-particles');
+// update = function () {
+// 	stats.begin();
+// 	stats.end();
+// 	if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+// 		count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+// 	}
+// 	requestAnimationFrame(update);
+// };
+// requestAnimationFrame(update);;
